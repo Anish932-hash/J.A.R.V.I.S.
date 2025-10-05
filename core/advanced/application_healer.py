@@ -145,6 +145,66 @@ class ApplicationHealer:
         except Exception as e:
             self.logger.error(f"Error initializing heavy components: {e}")
 
+    async def check_application_health(self):
+        """
+        Check overall application health
+
+        Returns:
+            Dict containing health status information
+        """
+        try:
+            # Run basic health checks using available components
+            health_status = {
+                "healthy": True,
+                "issues": [],
+                "timestamp": time.time()
+            }
+
+            # Check error detector for recent errors
+            errors = self.error_detector.detect_errors()
+            if errors:
+                health_status["healthy"] = False
+                health_status["issues"].extend(errors)
+
+            # Use optimizer for system health check if available
+            try:
+                opt_result = await self.optimizer.optimize_system()
+                if not opt_result.get("success", False):
+                    health_status["healthy"] = False
+                    health_status["issues"].append({
+                        "type": "optimization_failure",
+                        "message": "System optimization failed",
+                        "severity": "medium"
+                    })
+            except:
+                # Optimizer might not be ready, skip
+                pass
+
+            # Check health reporter
+            health_report = await self.health_reporter.generate_health_report()
+            if health_report.get("issues"):
+                health_status["healthy"] = False
+                health_status["issues"].extend(health_report["issues"])
+
+            return {
+                "timestamp": time.time(),
+                "healthy": health_status["healthy"],
+                "system_health": health_status,
+                "component_health": health_report,
+                "issues": health_status["issues"]
+            }
+
+        except Exception as e:
+            self.logger.error(f"Error checking application health: {e}")
+            return {
+                "timestamp": time.time(),
+                "healthy": False,
+                "error": str(e),
+                "system_health": {},
+                "component_health": {},
+                "issues": [{"error": str(e), "severity": "critical"}]
+            }
+
     async def _ensure_component_ready(self, component_name: str):
         """Ensure a specific component is initialized when accessed"""
         if not hasattr(self, component_name) or getattr(self, component_name) is None:

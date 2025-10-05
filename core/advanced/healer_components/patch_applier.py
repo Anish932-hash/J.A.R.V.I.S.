@@ -528,8 +528,8 @@ class PatchApplier:
             with open(patch.file_path, 'r') as f:
                 original_code = f.read()
 
-            # Generate patched code (simplified - would need actual patch application)
-            patched_code = original_code  # Placeholder
+            # Apply patch to code using real patch application
+            patched_code = await self._apply_patch_to_code(original_code, patch)
 
             # Validate the patch
             validation = self.validator.validate_patch(
@@ -549,17 +549,105 @@ class PatchApplier:
             self.logger.error(f"Error validating patch: {e}")
             return False
 
-    async def _execute_patch_application(self, patch: Patch) -> Dict[str, Any]:
-        """Execute the actual patch application"""
+    async def _apply_patch_to_code(self, original_code: str, patch: Patch) -> str:
+        """Apply patch changes to code using real diff/patch logic"""
         try:
-            # This is a simplified implementation
-            # In a real system, this would apply the actual code changes
+            import difflib
+            import ast
 
-            # For now, just mark as successful
+            patched_code = original_code
+
+            for change in patch.changes:
+                change_type = change.get('type', 'unknown')
+
+                if change_type == 'line_replace':
+                    # Real line replacement
+                    old_line = change.get('old_line', '')
+                    new_line = change.get('new_line', '')
+                    patched_code = patched_code.replace(old_line, new_line)
+
+                elif change_type == 'block_replace':
+                    # Real block replacement
+                    old_block = change.get('old_block', '')
+                    new_block = change.get('new_block', '')
+                    patched_code = patched_code.replace(old_block, new_block)
+
+                elif change_type == 'insert_before':
+                    # Insert code before a marker
+                    marker = change.get('marker', '')
+                    new_code = change.get('new_code', '')
+                    if marker in patched_code:
+                        patched_code = patched_code.replace(marker, new_code + '\n' + marker)
+
+                elif change_type == 'insert_after':
+                    # Insert code after a marker
+                    marker = change.get('marker', '')
+                    new_code = change.get('new_code', '')
+                    if marker in patched_code:
+                        patched_code = patched_code.replace(marker, marker + '\n' + new_code)
+
+                elif change_type == 'delete_lines':
+                    # Delete specific lines
+                    start_line = change.get('start_line', 0)
+                    end_line = change.get('end_line', 0)
+                    lines = patched_code.split('\n')
+                    if 0 <= start_line < len(lines) and start_line <= end_line < len(lines):
+                        del lines[start_line:end_line + 1]
+                        patched_code = '\n'.join(lines)
+
+            # Validate syntax of patched code
+            try:
+                if patch.file_path.endswith('.py'):
+                    ast.parse(patched_code)
+                    self.logger.info(f"Patched code syntax validated for {patch.file_path}")
+            except SyntaxError as e:
+                self.logger.error(f"Patch resulted in invalid syntax: {e}")
+                return original_code  # Return original if patch breaks syntax
+
+            return patched_code
+
+        except Exception as e:
+            self.logger.error(f"Error applying patch to code: {e}")
+            return original_code
+
+    async def _execute_patch_application(self, patch: Patch) -> Dict[str, Any]:
+        """Execute the actual patch application with real file modifications"""
+        try:
+            # Read original file
+            if not os.path.exists(patch.file_path):
+                return {"success": False, "error": "File not found"}
+
+            with open(patch.file_path, 'r') as f:
+                original_code = f.read()
+
+            # Apply patch
+            patched_code = await self._apply_patch_to_code(original_code, patch)
+
+            # Check if patch actually changed the code
+            if patched_code == original_code:
+                return {
+                    "success": False,
+                    "error": "Patch did not modify the code (no changes applied)"
+                }
+
+            # Create backup before applying
+            backup_path = f"{patch.file_path}.backup_{int(time.time())}"
+            with open(backup_path, 'w') as f:
+                f.write(original_code)
+
+            self.logger.info(f"Created backup: {backup_path}")
+
+            # Write patched code to file
+            with open(patch.file_path, 'w') as f:
+                f.write(patched_code)
+
+            self.logger.info(f"Applied patch to {patch.file_path} - {len(patch.changes)} changes")
+
             result = {
                 "success": True,
                 "changes_applied": len(patch.changes),
-                "restart_required": False,
+                "backup_path": backup_path,
+                "restart_required": self._check_if_restart_required(patch),
                 "verification": {
                     "passed": True,
                     "tests_run": 0,
@@ -572,13 +660,29 @@ class PatchApplier:
                 verification = await self._verify_patch_application(patch)
                 result["verification"] = verification
 
+                # Rollback if verification failed
+                if not verification.get("passed", False):
+                    self.logger.warning(f"Patch verification failed, rolling back...")
+                    with open(patch.file_path, 'w') as f:
+                        f.write(original_code)
+                    result["success"] = False
+                    result["error"] = "Verification failed - patch rolled back"
+
             return result
 
         except Exception as e:
+            self.logger.error(f"Error executing patch: {e}")
             return {
                 "success": False,
                 "error": str(e)
             }
+
+    def _check_if_restart_required(self, patch: Patch) -> bool:
+        """Check if system restart is required after patch"""
+        # Check if patching core system files
+        critical_files = ['jarvis.py', 'system_core.py', 'event_manager.py', '__init__.py']
+        filename = os.path.basename(patch.file_path)
+        return filename in critical_files
 
     async def _verify_patch_application(self, patch: Patch) -> Dict[str, Any]:
         """Verify patch application by running tests"""

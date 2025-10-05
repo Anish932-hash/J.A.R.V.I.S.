@@ -1,0 +1,26 @@
+{
+  "last_updated": 1759655177.3348117,
+  "tasks": [
+    {
+      "task_id": "5b9992a6-2bd7-4f2d-884f-d29ebded36c5",
+      "task_type": "feature",
+      "description": "Add user profile management feature",
+      "priority": 5,
+      "requirements": {},
+      "status": "failed",
+      "progress": 10,
+      "current_stage": "research",
+      "research_data": [],
+      "generated_code": "",
+      "test_results": {},
+      "deployment_info": {},
+      "created_at": 1759655169.8197546,
+      "started_at": 1759655177.3345592,
+      "completed_at": 1759655177.3347716,
+      "errors": [
+        "'EventManager' object has no attribute 'EventType'"
+      ],
+      "retry_count": 0
+    }
+  ]
+}

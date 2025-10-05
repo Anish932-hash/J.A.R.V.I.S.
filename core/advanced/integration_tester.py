@@ -1215,7 +1215,7 @@ class Mock{dep_name.title().replace('_', '')}:
                 {'pattern': 'from jarvis', 'test': 'jarvis_from_import_test'}
             ],
             'api_integration': [
-                {'pattern': 'self\.jarvis\.', 'test': 'jarvis_api_test'},
+                {'pattern': r'self\.jarvis\.', 'test': 'jarvis_api_test'},
                 {'pattern': 'event_manager', 'test': 'event_system_test'}
             ]
         }

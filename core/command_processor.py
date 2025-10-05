@@ -461,45 +461,141 @@ class CommandProcessor:
         return command
 
     def _calculate_confidence(self, text: str, intent: str) -> float:
-        """Calculate confidence score for command matching"""
-        # Simple confidence based on pattern matching
-        # In a more advanced system, this would use ML models
+        """Calculate confidence score for command matching using advanced NLP"""
+        try:
+            # Import transformer models for semantic similarity
+            from sentence_transformers import SentenceTransformer, util
 
-        # Check for exact matches first
-        if text in self.command_suggestions:
-            return 0.9
+            # Initialize model (lazy loading for performance)
+            if not hasattr(self, '_semantic_model'):
+                self._semantic_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-        # Check for similar commands in history
-        similar_commands = difflib.get_close_matches(
-            text,
-            [cmd["text"] for cmd in self.command_history[-100:]],
-            n=1,
-            cutoff=0.6
-        )
+            # Check for exact matches first
+            if text in self.command_suggestions:
+                return 0.95
 
-        if similar_commands:
-            return 0.7
+            # Use transformer-based semantic similarity for better understanding
+            if hasattr(self, '_semantic_model'):
+                # Get intent description/pattern
+                intent_pattern = self.command_patterns.get(intent, {}).get("pattern", "")
+                if intent_pattern:
+                    # Get embeddings
+                    text_embedding = self._semantic_model.encode(text, convert_to_tensor=True)
+                    intent_embedding = self._semantic_model.encode(str(intent_pattern.pattern), convert_to_tensor=True)
 
-        # Default confidence for pattern matches
-        return 0.6
+                    # Calculate cosine similarity
+                    similarity = util.pytorch_cos_sim(text_embedding, intent_embedding).item()
+
+                    # Return scaled similarity as confidence
+                    return min(0.95, max(0.5, similarity))
+
+            # Fallback to fuzzy matching
+            similar_commands = difflib.get_close_matches(
+                text,
+                [cmd["text"] for cmd in self.command_history[-100:]],
+                n=1,
+                cutoff=0.6
+            )
+
+            if similar_commands:
+                return 0.7
+
+            # Default confidence for pattern matches
+            return 0.6
+
+        except ImportError:
+            # Fallback if sentence_transformers not available
+            if text in self.command_suggestions:
+                return 0.9
+
+            similar_commands = difflib.get_close_matches(
+                text,
+                [cmd["text"] for cmd in self.command_history[-100:]],
+                n=1,
+                cutoff=0.6
+            )
+
+            if similar_commands:
+                return 0.7
+
+            return 0.6
+        except Exception as e:
+            self.jarvis.logger.warning(f"Error in confidence calculation: {e}")
+            return 0.6
 
     def _extract_entities(self, match: re.Match, entity_names: List[str]) -> List[Dict[str, Any]]:
-        """Extract entities from regex match"""
+        """Extract entities from regex match with advanced NER"""
         entities = []
 
+        # Basic regex extraction
         for i, entity_name in enumerate(entity_names):
             try:
                 if i + 1 <= len(match.groups()):
+                    entity_value = match.group(i + 1)
                     entities.append({
                         "name": entity_name,
-                        "value": match.group(i + 1),
+                        "value": entity_value,
                         "start": match.start(i + 1),
-                        "end": match.end(i + 1)
+                        "end": match.end(i + 1),
+                        "confidence": 0.9
                     })
             except:
                 pass
 
+        # Enhanced entity extraction using spaCy for NER
+        try:
+            import spacy
+            if not hasattr(self, '_nlp_model'):
+                try:
+                    self._nlp_model = spacy.load("en_core_web_sm")
+                except OSError:
+                    # Model not installed, skip advanced NER
+                    return entities
+
+            # Process full text with spaCy
+            doc = self._nlp_model(match.string)
+
+            # Extract named entities
+            for ent in doc.ents:
+                # Map spaCy entity types to our entity types
+                entity_type = self._map_spacy_entity_type(ent.label_)
+                if entity_type:
+                    entities.append({
+                        "name": entity_type,
+                        "value": ent.text,
+                        "start": ent.start_char,
+                        "end": ent.end_char,
+                        "confidence": 0.85,
+                        "spacy_label": ent.label_
+                    })
+
+        except ImportError:
+            # spaCy not available, use basic extraction
+            pass
+        except Exception as e:
+            self.jarvis.logger.debug(f"Error in advanced entity extraction: {e}")
+
         return entities
+
+    def _map_spacy_entity_type(self, spacy_label: str) -> Optional[str]:
+        """Map spaCy entity labels to command entity types"""
+        mapping = {
+            "PERSON": "person_name",
+            "ORG": "organization",
+            "GPE": "location",
+            "DATE": "date",
+            "TIME": "time",
+            "MONEY": "amount",
+            "PERCENT": "percentage",
+            "CARDINAL": "number",
+            "ORDINAL": "ordinal",
+            "PRODUCT": "product_name",
+            "EVENT": "event_name",
+            "WORK_OF_ART": "title",
+            "FAC": "facility",
+            "LOC": "location"
+        }
+        return mapping.get(spacy_label)
 
     def _execute_command(self, command: Command) -> Any:
         """Execute parsed command"""

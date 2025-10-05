@@ -1,17 +1,26 @@
 {
-  "test_timestamp": 1759540290.7100084,
+  "test_timestamp": 1759655439.2874088,
   "total_tests": 2,
-  "passed_tests": 0,
-  "failed_tests": 2,
-  "overall_success_rate": 0.0,
+  "passed_tests": 2,
+  "failed_tests": 0,
+  "overall_success_rate": 100.0,
   "detailed_results": {
     "self_development_engine": {
-      "success": false,
-      "error": "'EventManager' object has no attribute 'EventType'"
+      "success": true,
+      "task_creation": true,
+      "code_generation": true,
+      "reasoning_engine": false,
+      "validator_available": true,
+      "web_searcher_available": true
     },
     "application_healer": {
-      "success": false,
-      "error": "name 'asyncio' is not defined"
+      "success": true,
+      "health_check": true,
+      "error_detection": true,
+      "fix_generation": true,
+      "recovery_planning": true,
+      "optimizer_available": true,
+      "predictor_available": true
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "plan_id": "plan_1759655051_1697b644",
+  "name": "System Restart",
+  "description": "Basic system restart recovery plan",
+  "steps": [
+    {
+      "type": "command",
+      "description": "Stop all non-essential services",
+      "parameters": {
+        "command": "systemctl stop non-essential",
+        "timeout": 30
+      },
+      "estimated_duration": 10
+    },
+    {
+      "type": "wait",
+      "description": "Wait for services to stop",
+      "parameters": {
+        "duration": 5
+      },
+      "estimated_duration": 5
+    },
+    {
+      "type": "command",
+      "description": "Restart system",
+      "parameters": {
+        "command": "shutdown -r now",
+        "timeout": 60
+      },
+      "estimated_duration": 60
+    }
+  ],
+  "estimated_duration": 75,
+  "risk_level": "low",
+  "prerequisites": [
+    "backup_power"
+  ],
+  "created_at": 1759655051.976965,
+  "last_tested": null,
+  "success_rate": 0.0
+}

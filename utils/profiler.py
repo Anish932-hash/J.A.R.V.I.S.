@@ -155,7 +155,7 @@ class PerformanceProfiler:
             # Check execution time
             exec_time_ms = metrics.get("execution_time", 0) * 1000
             if exec_time_ms > self.thresholds["execution_time_ms"]:
-                alerts.append(f"High execution time: {exec_time_ms".2f"}ms")
+                alerts.append(f"High execution time: {exec_time_ms:.2f}ms")
 
             # Check memory usage
             memory_mb = metrics.get("end_memory", 0) / (1024 * 1024)

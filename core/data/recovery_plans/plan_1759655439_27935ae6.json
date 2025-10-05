@@ -1,0 +1,19 @@
+{
+  "plan_id": "plan_1759655439_27935ae6",
+  "name": "test_app_recovery",
+  "description": "Recovery plan for crashed application",
+  "steps": [
+    {
+      "action": "restart_application",
+      "estimated_duration": 30
+    }
+  ],
+  "estimated_duration": 30,
+  "risk_level": "low",
+  "prerequisites": [
+    "application_installed"
+  ],
+  "created_at": 1759655439.285576,
+  "last_tested": null,
+  "success_rate": 0.0
+}

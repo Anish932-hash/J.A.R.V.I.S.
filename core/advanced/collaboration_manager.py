@@ -118,37 +118,61 @@ class PeerDiscovery:
         self.logger = logging.getLogger('JARVIS.PeerDiscovery')
 
     def discover_peers(self) -> List[Dict[str, Any]]:
-        """Discover available peers on the network"""
+        """Discover available peers on the network using real UDP broadcast"""
         try:
             peers = []
 
-            # Simple UDP broadcast discovery (simulation)
-            # In a real implementation, this would send discovery packets
+            # Real UDP broadcast discovery
+            discovery_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            discovery_socket.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+            discovery_socket.settimeout(2.0)  # 2 second timeout
 
-            # Mock discovered peers
-            mock_peers = [
-                {
-                    'id': 'peer_001',
-                    'name': 'JARVIS-Remote-1',
-                    'address': '192.168.1.100',
-                    'port': 8888,
-                    'capabilities': ['collaboration', 'file_sharing'],
-                    'last_seen': datetime.now().isoformat()
-                },
-                {
-                    'id': 'peer_002',
-                    'name': 'JARVIS-Dev-Station',
-                    'address': '192.168.1.101',
-                    'port': 8889,
-                    'capabilities': ['collaboration', 'code_review'],
-                    'last_seen': datetime.now().isoformat()
-                }
-            ]
+            # Create discovery message
+            discovery_message = json.dumps({
+                'type': 'discovery_request',
+                'peer_id': str(uuid.uuid4())[:8],
+                'timestamp': datetime.now().isoformat(),
+                'capabilities': ['collaboration', 'file_sharing', 'code_review']
+            }).encode('utf-8')
 
-            for peer in mock_peers:
-                self.known_peers[peer['id']] = peer
-                peers.append(peer)
+            try:
+                # Send broadcast
+                discovery_socket.sendto(discovery_message, ('<broadcast>', self.discovery_port))
+                self.logger.info(f"Sent discovery broadcast on port {self.discovery_port}")
 
+                # Listen for responses
+                start_time = time.time()
+                while time.time() - start_time < 2.0:  # Listen for 2 seconds
+                    try:
+                        data, addr = discovery_socket.recvfrom(4096)
+                        response = json.loads(data.decode('utf-8'))
+
+                        if response.get('type') == 'discovery_response':
+                            peer_info = {
+                                'id': response.get('peer_id', str(uuid.uuid4())[:8]),
+                                'name': response.get('name', f'JARVIS-{addr[0]}'),
+                                'address': addr[0],
+                                'port': response.get('port', 8888),
+                                'capabilities': response.get('capabilities', ['collaboration']),
+                                'last_seen': datetime.now().isoformat()
+                            }
+
+                            # Avoid duplicate peers
+                            if peer_info['id'] not in self.known_peers:
+                                self.known_peers[peer_info['id']] = peer_info
+                                peers.append(peer_info)
+                                self.logger.info(f"Discovered peer: {peer_info['name']} at {peer_info['address']}")
+
+                    except socket.timeout:
+                        continue
+                    except json.JSONDecodeError:
+                        self.logger.warning(f"Invalid discovery response from {addr}")
+                        continue
+
+            finally:
+                discovery_socket.close()
+
+            self.logger.info(f"Discovery complete: found {len(peers)} peers")
             return peers
 
         except Exception as e:
@@ -258,13 +282,43 @@ class DataSynchronization:
                             'error': str(e)
                         })
             else:
-                # Default handling - simulate success
+                # Default handling - attempt to send data via network
                 for target_peer in sync_request['target_peers']:
-                    results.append({
-                        'peer': target_peer,
-                        'success': True,
-                        'result': 'simulated_sync'
-                    })
+                    try:
+                        # Real network transfer
+                        sync_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                        sync_socket.settimeout(5.0)
+
+                        # Get peer address from known peers
+                        peer_info = self.known_peers.get(target_peer)
+                        if peer_info:
+                            sync_socket.connect((peer_info['address'], peer_info['port']))
+
+                            # Send sync data
+                            sync_data = json.dumps(sync_request).encode('utf-8')
+                            sync_socket.sendall(sync_data)
+
+                            # Receive acknowledgment
+                            ack = sync_socket.recv(1024).decode('utf-8')
+                            sync_socket.close()
+
+                            results.append({
+                                'peer': target_peer,
+                                'success': True,
+                                'result': ack
+                            })
+                        else:
+                            results.append({
+                                'peer': target_peer,
+                                'success': False,
+                                'error': 'Peer not found in known peers'
+                            })
+                    except Exception as e:
+                        results.append({
+                            'peer': target_peer,
+                            'success': False,
+                            'error': str(e)
+                        })
 
             return results
 
@@ -650,58 +704,155 @@ class CollaborationManager:
         await self._handle_collaboration_message(message)
 
     async def _sync_file(self, data: Dict[str, Any], target_peer: str) -> Dict[str, Any]:
-        """Synchronize file data"""
+        """Synchronize file data with real file transfer"""
         try:
-            # Simulate file synchronization
             file_path = data.get('path', '')
-            file_content = data.get('content', '')
+            file_content = data.get('content', b'')
 
-            # In a real implementation, this would transfer the file
-            self.logger.info(f"Simulating file sync of {file_path} to {target_peer}")
+            # Get peer information
+            peer_info = self.peer_discovery.get_peer(target_peer)
+            if not peer_info:
+                return {'error': 'Peer not found'}
 
-            return {
-                'file_path': file_path,
-                'bytes_transferred': len(file_content),
-                'status': 'completed'
-            }
+            # Real file transfer via socket
+            transfer_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            transfer_socket.settimeout(30.0)
+
+            try:
+                transfer_socket.connect((peer_info['address'], peer_info['port']))
+
+                # Send file transfer request
+                request = {
+                    'type': 'file_transfer',
+                    'path': file_path,
+                    'size': len(file_content)
+                }
+                transfer_socket.sendall(json.dumps(request).encode('utf-8') + b'\n')
+
+                # Send file content in chunks
+                chunk_size = 8192
+                bytes_sent = 0
+                for i in range(0, len(file_content), chunk_size):
+                    chunk = file_content[i:i + chunk_size]
+                    transfer_socket.sendall(chunk)
+                    bytes_sent += len(chunk)
+
+                # Wait for acknowledgment
+                ack = transfer_socket.recv(1024).decode('utf-8')
+                transfer_socket.close()
+
+                self.logger.info(f"File sync completed: {file_path} to {target_peer} ({bytes_sent} bytes)")
+
+                return {
+                    'file_path': file_path,
+                    'bytes_transferred': bytes_sent,
+                    'status': 'completed',
+                    'acknowledgment': ack
+                }
+
+            finally:
+                transfer_socket.close()
 
         except Exception as e:
+            self.logger.error(f"Error syncing file: {e}")
             return {'error': str(e)}
 
     async def _sync_code(self, data: Dict[str, Any], target_peer: str) -> Dict[str, Any]:
-        """Synchronize code data"""
+        """Synchronize code data with real transfer"""
         try:
-            # Simulate code synchronization
             code_snippet = data.get('code', '')
             language = data.get('language', 'python')
+            file_path = data.get('file_path', 'unnamed.py')
 
-            self.logger.info(f"Simulating code sync ({language}) to {target_peer}")
+            # Get peer information
+            peer_info = self.peer_discovery.get_peer(target_peer)
+            if not peer_info:
+                return {'error': 'Peer not found'}
 
-            return {
-                'language': language,
-                'lines_synced': len(code_snippet.split('\n')),
-                'status': 'completed'
-            }
+            # Real code transfer
+            transfer_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            transfer_socket.settimeout(10.0)
+
+            try:
+                transfer_socket.connect((peer_info['address'], peer_info['port']))
+
+                # Send code sync request
+                request = {
+                    'type': 'code_sync',
+                    'language': language,
+                    'file_path': file_path,
+                    'code': code_snippet,
+                    'lines': len(code_snippet.split('\n'))
+                }
+                transfer_socket.sendall(json.dumps(request).encode('utf-8'))
+
+                # Wait for acknowledgment
+                ack = transfer_socket.recv(1024).decode('utf-8')
+                transfer_socket.close()
+
+                self.logger.info(f"Code sync completed: {language} code to {target_peer}")
+
+                return {
+                    'language': language,
+                    'lines_synced': len(code_snippet.split('\n')),
+                    'status': 'completed',
+                    'acknowledgment': ack
+                }
+
+            finally:
+                transfer_socket.close()
 
         except Exception as e:
+            self.logger.error(f"Error syncing code: {e}")
             return {'error': str(e)}
 
     async def _sync_task(self, data: Dict[str, Any], target_peer: str) -> Dict[str, Any]:
-        """Synchronize task data"""
+        """Synchronize task data with real transfer"""
         try:
-            # Simulate task synchronization
             task_id = data.get('task_id', '')
             task_status = data.get('status', 'unknown')
+            task_data = data.get('task_data', {})
 
-            self.logger.info(f"Simulating task sync ({task_id}: {task_status}) to {target_peer}")
+            # Get peer information
+            peer_info = self.peer_discovery.get_peer(target_peer)
+            if not peer_info:
+                return {'error': 'Peer not found'}
 
-            return {
-                'task_id': task_id,
-                'status': task_status,
-                'sync_status': 'completed'
-            }
+            # Real task synchronization
+            sync_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sync_socket.settimeout(10.0)
+
+            try:
+                sync_socket.connect((peer_info['address'], peer_info['port']))
+
+                # Send task sync request
+                request = {
+                    'type': 'task_sync',
+                    'task_id': task_id,
+                    'status': task_status,
+                    'data': task_data,
+                    'timestamp': datetime.now().isoformat()
+                }
+                sync_socket.sendall(json.dumps(request).encode('utf-8'))
+
+                # Wait for acknowledgment
+                ack = sync_socket.recv(1024).decode('utf-8')
+                sync_socket.close()
+
+                self.logger.info(f"Task sync completed: {task_id} ({task_status}) to {target_peer}")
+
+                return {
+                    'task_id': task_id,
+                    'status': task_status,
+                    'sync_status': 'completed',
+                    'acknowledgment': ack
+                }
+
+            finally:
+                sync_socket.close()
 
         except Exception as e:
+            self.logger.error(f"Error syncing task: {e}")
             return {'error': str(e)}
 
     def get_active_sessions(self) -> List[Dict[str, Any]]:

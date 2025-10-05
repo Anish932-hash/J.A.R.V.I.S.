@@ -78,13 +78,22 @@ class AIComponentsTester:
             )
 
             # Test code generation
-            code_request = {
-                "task": "Create a user authentication function",
-                "requirements": ["Use secure password hashing", "Return user object"],
+            task_description = "Create a user authentication function"
+            reasoning_data = {
+                "analysis": "User authentication requires secure password handling",
+                "research": ["bcrypt for password hashing", "session management"]
+            }
+            requirements = {
+                "security": ["Use bcrypt for password hashing", "Salt passwords"],
+                "functionality": ["Validate credentials", "Return user object"],
                 "language": "python"
             }
 
-            generated_code = await sde.code_generator.generate_code(code_request)
+            generated_code = await sde.code_generator.generate_code(
+                task_description=task_description,
+                reasoning_data=reasoning_data,
+                requirements=requirements
+            )
 
             # Test reasoning
             reasoning_result = await sde.reasoning_engine.reason(
@@ -128,16 +137,17 @@ class AIComponentsTester:
             error_analysis = healer.error_detector.analyze_error(test_error)
 
             # Test fix generation
-            fix_suggestion = healer.fix_generator.generate_fix(
-                error_info={"type": "AttributeError", "message": "'NoneType' object has no attribute 'method'"},
-                context={"file": "test.py", "line": 42}
+            fix_suggestion = await healer.fix_generator.generate_fix(
+                {"type": "AttributeError", "message": "'NoneType' object has no attribute 'method'"},
+                {"file": "test.py", "line": 42}
             )
 
             # Test recovery
-            recovery_plan = healer.recovery_manager.create_recovery_plan(
-                application_name="test_app",
-                failure_type="crash",
-                context={"pid": 1234, "error_count": 3}
+            recovery_plan = await healer.recovery_manager.create_recovery_plan(
+                name="test_app_recovery",
+                description="Recovery plan for crashed application",
+                steps=[{"action": "restart_application", "estimated_duration": 30}],
+                prerequisites=["application_installed"]
             )
 
             self.results["application_healer"] = {

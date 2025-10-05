@@ -104,5 +104,51 @@ class ErrorDetector:
 
         return errors
 
+    def analyze_error(self, error: Exception) -> Dict[str, Any]:
+        """
+        Analyze a specific error/exception
+
+        Args:
+            error: Exception object to analyze
+
+        Returns:
+            Dict containing error analysis
+        """
+        analysis = {
+            "error_type": type(error).__name__,
+            "error_message": str(error),
+            "timestamp": time.time(),
+            "severity": "medium",
+            "suggest_fix": False,
+            "traceback_available": True
+        }
+
+        try:
+            # Analyze error type
+            error_type = type(error).__name__
+
+            # Determine severity based on error type
+            if error_type in ["SystemExit", "KeyboardInterrupt"]:
+                analysis["severity"] = "low"
+            elif error_type in ["ConnectionError", "TimeoutError", "OSError"]:
+                analysis["severity"] = "medium"
+                analysis["suggest_fix"] = True
+            elif error_type in ["ValueError", "TypeError", "AttributeError", "KeyError"]:
+                analysis["severity"] = "high"
+                analysis["suggest_fix"] = True
+            else:
+                analysis["severity"] = "critical"
+                analysis["suggest_fix"] = True
+
+            # Add additional analysis info
+            analysis["module"] = getattr(error, '__module__', 'unknown')
+            analysis["args"] = getattr(error, 'args', [])
+
+        except Exception as e:
+            self.logger.error(f"Error analyzing exception: {e}")
+            analysis["analysis_error"] = str(e)
+
+        return analysis
+
     async def shutdown(self):
         self.logger.info("Error Detector shutdown complete")

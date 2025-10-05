@@ -28,6 +28,9 @@ from .advanced_research_engine import AdvancedResearchEngine
 from .knowledge_synthesizer import KnowledgeSynthesizer
 from .innovation_engine import InnovationEngine
 from .code_optimizer import CodeOptimizer
+
+# Import EventType for event management
+from jarvis.core.event_manager import EventType
 from .security_validator import SecurityValidator
 from .performance_analyzer import PerformanceAnalyzer
 from .integration_tester import IntegrationTester
@@ -233,7 +236,7 @@ class SelfDevelopmentEngine:
             # Notify GUI if available
             if hasattr(self.jarvis, 'event_manager'):
                 self.jarvis.event_manager.emit_event(
-                    self.jarvis.event_manager.EventType.CUSTOM,
+                    EventType.CUSTOM,
                     {
                         "event_type": "development_task_created",
                         "task_id": task.task_id,
@@ -500,7 +503,7 @@ class SelfDevelopmentEngine:
         # Notify about progress
         if hasattr(self.jarvis, 'event_manager'):
             self.jarvis.event_manager.emit_event(
-                self.jarvis.event_manager.EventType.CUSTOM,
+                EventType.CUSTOM,
                 {
                     "event_type": "development_task_progress",
                     "task_id": task.task_id,
@@ -532,7 +535,7 @@ class SelfDevelopmentEngine:
         # Notify about failure
         if hasattr(self.jarvis, 'event_manager'):
             self.jarvis.event_manager.emit_event(
-                self.jarvis.event_manager.EventType.CUSTOM,
+                EventType.CUSTOM,
                 {
                     "event_type": "development_task_failed",
                     "task_id": task.task_id,
@@ -578,7 +581,7 @@ class SelfDevelopmentEngine:
             # Notify about completion
             if hasattr(self.jarvis, 'event_manager'):
                 self.jarvis.event_manager.emit_event(
-                    self.jarvis.event_manager.EventType.CUSTOM,
+                    EventType.CUSTOM,
                     {
                         "event_type": "development_task_completed",
                         "task_id": task.task_id,

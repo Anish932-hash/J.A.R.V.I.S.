@@ -710,6 +710,86 @@ class HealthReporter:
         except Exception as e:
             self.logger.debug(f"Could not load health history: {e}")
 
+    async def generate_health_report(self) -> Dict[str, Any]:
+        """
+        Generate comprehensive health report
+
+        Returns:
+            Dict containing health report data
+        """
+        try:
+            # Update metrics first
+            await self._update_health_metrics()
+
+            report = {
+                "timestamp": time.time(),
+                "summary": {
+                    "overall_status": "healthy",
+                    "issues_count": 0,
+                    "warnings_count": 0
+                },
+                "issues": [],
+                "warnings": [],
+                "metrics": {},
+                "recommendations": []
+            }
+
+            # Analyze metrics
+            for metric_name, metric in self.health_metrics.items():
+                if metric.status == "critical":
+                    report["summary"]["issues_count"] += 1
+                    report["summary"]["overall_status"] = "critical"
+                    report["issues"].append({
+                        "metric": metric_name,
+                        "message": f"Critical: {metric.name} is at {metric.current_value}{metric.unit}",
+                        "value": metric.current_value,
+                        "threshold": metric.threshold_critical
+                    })
+                elif metric.status == "warning":
+                    if report["summary"]["overall_status"] == "healthy":
+                        report["summary"]["overall_status"] = "warning"
+                    report["summary"]["warnings_count"] += 1
+                    report["warnings"].append({
+                        "metric": metric_name,
+                        "message": f"Warning: {metric.name} is at {metric.current_value}{metric.unit}",
+                        "value": metric.current_value,
+                        "threshold": metric.threshold_warning
+                    })
+
+                # Add metric data
+                report["metrics"][metric_name] = {
+                    "name": metric.name,
+                    "value": metric.current_value,
+                    "unit": metric.unit,
+                    "status": metric.status,
+                    "trend": metric.trend
+                }
+
+            # Generate recommendations based on issues
+            if report["issues"]:
+                report["recommendations"].append("Address critical health issues immediately")
+            if report["warnings"]:
+                report["recommendations"].append("Review warning conditions to prevent issues")
+            if not report["issues"] and not report["warnings"]:
+                report["recommendations"].append("System health is optimal")
+
+            return report
+
+        except Exception as e:
+            self.logger.error(f"Error generating health report: {e}")
+            return {
+                "timestamp": time.time(),
+                "summary": {
+                    "overall_status": "unknown",
+                    "issues_count": 1,
+                    "warnings_count": 0
+                },
+                "issues": [{"error": str(e), "severity": "critical"}],
+                "warnings": [],
+                "metrics": {},
+                "recommendations": ["Investigate health reporting system"]
+            }
+
     async def shutdown(self):
         """Shutdown the advanced health reporter"""
         try:

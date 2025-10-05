@@ -16018,3 +16018,5 @@
 2025-10-05 10:51:27,757 - JARVIS - DEBUG - Event emitted: Event(custom, NORMAL, custom)
 2025-10-05 10:51:28,829 - JARVIS.SystemMonitor - WARNING - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
 2025-10-05 10:51:28,858 - JARVIS - DEBUG - Event emitted: Event(custom, NORMAL, custom)
+2025-10-05 13:08:17,236 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\ANISH\\AppData\\Roaming\\Python\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-10-05 13:08:17,238 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\ANISH\AppData\Roaming\Python\Python313\site-packages\comtypes\gen'

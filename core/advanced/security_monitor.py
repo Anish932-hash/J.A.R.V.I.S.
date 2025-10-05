@@ -28,6 +28,12 @@ try:
 except ImportError:
     YARA_AVAILABLE = False
 
+try:
+    import aiohttp
+    AIOHTTP_AVAILABLE = True
+except ImportError:
+    AIOHTTP_AVAILABLE = False
+
 
 class ThreatIntelligence:
     """Threat intelligence gathering and analysis"""
@@ -38,35 +44,158 @@ class ThreatIntelligence:
         self.logger = logging.getLogger('JARVIS.ThreatIntelligence')
 
     async def update_threat_feeds(self) -> Dict[str, Any]:
-        """Update threat intelligence feeds"""
+        """Update threat intelligence feeds from real sources"""
         try:
-            # In a real implementation, this would fetch from various threat feeds
-            # For now, simulate with mock data
+            indicators_added = 0
 
-            mock_indicators = {
-                'malicious_ips': ['192.168.1.100', '10.0.0.50'],
-                'suspicious_domains': ['malicious-site.com', 'phishing-domain.net'],
-                'known_malware_hashes': [
-                    'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',
-                    'b615a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae4'
-                ],
-                'suspicious_processes': ['suspicious.exe', 'malware.bin']
-            }
+            # Fetch from AbuseIPDB (known malicious IPs)
+            if AIOHTTP_AVAILABLE:
+                try:
+                    # Real threat feed integration
+                    abuse_ips = await self._fetch_abuseipdb()
+                    if abuse_ips:
+                        self.indicators.update(abuse_ips)
+                        indicators_added += len(abuse_ips)
+                        self.threat_feeds['abuseipdb'] = {
+                            'indicators': len(abuse_ips),
+                            'last_update': datetime.now().isoformat()
+                        }
+                except Exception as e:
+                    self.logger.warning(f"Could not fetch AbuseIPDB feed: {e}")
 
-            self.indicators.update(mock_indicators['malicious_ips'])
-            self.indicators.update(mock_indicators['suspicious_domains'])
-            self.indicators.update(mock_indicators['known_malware_hashes'])
-            self.indicators.update(mock_indicators['suspicious_processes'])
+            # Fetch malware hashes from URLhaus
+            if AIOHTTP_AVAILABLE:
+                try:
+                    malware_hashes = await self._fetch_urlhaus_hashes()
+                    if malware_hashes:
+                        self.indicators.update(malware_hashes)
+                        indicators_added += len(malware_hashes)
+                        self.threat_feeds['urlhaus'] = {
+                            'indicators': len(malware_hashes),
+                            'last_update': datetime.now().isoformat()
+                        }
+                except Exception as e:
+                    self.logger.warning(f"Could not fetch URLhaus feed: {e}")
+
+            # Fetch from PhishTank (phishing domains)
+            if AIOHTTP_AVAILABLE:
+                try:
+                    phish_domains = await self._fetch_phishtank()
+                    if phish_domains:
+                        self.indicators.update(phish_domains)
+                        indicators_added += len(phish_domains)
+                        self.threat_feeds['phishtank'] = {
+                            'indicators': len(phish_domains),
+                            'last_update': datetime.now().isoformat()
+                        }
+                except Exception as e:
+                    self.logger.warning(f"Could not fetch PhishTank feed: {e}")
+
+            # Load local threat database if it exists
+            local_db = await self._load_local_threat_db()
+            if local_db:
+                self.indicators.update(local_db)
+                indicators_added += len(local_db)
+
+            self.logger.info(f"Updated threat feeds: {indicators_added} indicators loaded")
 
             return {
                 'feeds_updated': len(self.threat_feeds),
                 'indicators_loaded': len(self.indicators),
+                'indicators_added': indicators_added,
                 'last_update': datetime.now().isoformat()
             }
 
         except Exception as e:
             self.logger.error(f"Error updating threat feeds: {e}")
             return {}
+
+    async def _fetch_abuseipdb(self) -> Set[str]:
+        """Fetch malicious IPs from AbuseIPDB public API"""
+        try:
+            # Using AbuseIPDB's public blacklist
+            async with aiohttp.ClientSession() as session:
+                # This would use a real API key in production
+                url = "https://api.abuseipdb.com/api/v2/blacklist"
+                headers = {'Accept': 'application/json'}
+
+                async with session.get(url, headers=headers, timeout=10) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        ips = {item['ipAddress'] for item in data.get('data', [])}
+                        self.logger.info(f"Fetched {len(ips)} malicious IPs from AbuseIPDB")
+                        return ips
+            return set()
+        except Exception as e:
+            self.logger.error(f"Error fetching AbuseIPDB: {e}")
+            return set()
+
+    async def _fetch_urlhaus_hashes(self) -> Set[str]:
+        """Fetch malware hashes from URLhaus"""
+        try:
+            async with aiohttp.ClientSession() as session:
+                url = "https://urlhaus.abuse.ch/downloads/csv_recent/"
+                async with session.get(url, timeout=15) as response:
+                    if response.status == 200:
+                        content = await response.text()
+                        # Parse CSV and extract hashes
+                        hashes = set()
+                        for line in content.split('\n'):
+                            if line and not line.startswith('#'):
+                                parts = line.split(',')
+                                if len(parts) > 5:
+                                    # Extract SHA256 hash (typically in column 5)
+                                    hash_value = parts[5].strip('"')
+                                    if len(hash_value) == 64:  # SHA256 length
+                                        hashes.add(hash_value)
+                        self.logger.info(f"Fetched {len(hashes)} malware hashes from URLhaus")
+                        return hashes
+            return set()
+        except Exception as e:
+            self.logger.error(f"Error fetching URLhaus: {e}")
+            return set()
+
+    async def _fetch_phishtank(self) -> Set[str]:
+        """Fetch phishing domains from PhishTank"""
+        try:
+            async with aiohttp.ClientSession() as session:
+                url = "http://data.phishtank.com/data/online-valid.json"
+                async with session.get(url, timeout=20) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        domains = set()
+                        for entry in data:
+                            if 'url' in entry:
+                                # Extract domain from URL
+                                url_str = entry['url']
+                                # Simple domain extraction
+                                match = re.search(r'://([^/]+)', url_str)
+                                if match:
+                                    domains.add(match.group(1))
+                        self.logger.info(f"Fetched {len(domains)} phishing domains from PhishTank")
+                        return domains
+            return set()
+        except Exception as e:
+            self.logger.error(f"Error fetching PhishTank: {e}")
+            return set()
+
+    async def _load_local_threat_db(self) -> Set[str]:
+        """Load local threat database"""
+        try:
+            db_path = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'threat_db.json')
+            if os.path.exists(db_path):
+                with open(db_path, 'r') as f:
+                    data = json.load(f)
+                    indicators = set()
+                    for category in data.values():
+                        if isinstance(category, list):
+                            indicators.update(category)
+                    self.logger.info(f"Loaded {len(indicators)} indicators from local database")
+                    return indicators
+            return set()
+        except Exception as e:
+            self.logger.error(f"Error loading local threat database: {e}")
+            return set()
 
     def check_indicator(self, value: str) -> bool:
         """Check if a value matches known threat indicators"""
@@ -616,21 +745,43 @@ class AdvancedSecurityMonitor:
             self.logger.error(f"Error cleaning up old alerts: {e}")
 
     def establish_behavioral_baseline(self) -> bool:
-        """Establish behavioral baseline for anomaly detection"""
+        """Establish behavioral baseline for anomaly detection using real historical data"""
         try:
             if not self.jarvis or not hasattr(self.jarvis, 'system_monitor'):
                 return False
 
-            # Collect historical data (would need actual historical data in production)
-            mock_history = {
-                'cpu_percent': [45.2, 42.1, 48.3, 43.7, 46.8, 44.5, 47.2, 41.9, 49.1, 45.6],
-                'memory_percent': [62.3, 64.1, 61.8, 63.2, 65.4, 62.9, 64.7, 63.1, 66.2, 64.8],
-                'disk_percent': [45.2, 45.3, 45.1, 45.4, 45.2, 45.3, 45.1, 45.4, 45.2, 45.3]
-            }
+            # Collect real historical data from system monitor
+            history = {}
+            system_monitor = self.jarvis.system_monitor
 
-            success = self.behavioral_analyzer.establish_baseline(mock_history)
+            # Sample metrics over a period
+            samples_needed = 20
+            sample_interval = 1.0  # seconds
+
+            metrics_to_track = ['cpu_percent', 'memory_percent', 'disk_percent']
+            for metric in metrics_to_track:
+                history[metric] = []
+
+            self.logger.info(f"Collecting baseline data ({samples_needed} samples over {samples_needed * sample_interval:.1f}s)...")
+
+            for i in range(samples_needed):
+                # Get current metrics
+                cpu = psutil.cpu_percent(interval=0.1)
+                memory = psutil.virtual_memory().percent
+                disk = psutil.disk_usage('/').percent if os.name != 'nt' else psutil.disk_usage('C:\\').percent
+
+                history['cpu_percent'].append(cpu)
+                history['memory_percent'].append(memory)
+                history['disk_percent'].append(disk)
+
+                if i < samples_needed - 1:
+                    time.sleep(sample_interval)
+
+            # Establish baseline from real collected data
+            success = self.behavioral_analyzer.establish_baseline(history)
             if success:
                 self.baseline_established = True
+                self.logger.info(f"Baseline established from {len(history['cpu_percent'])} real samples")
 
             return success
 
