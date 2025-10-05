@@ -1,0 +1,220 @@
+2025-10-05 06:41:59,877 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 06:41:59,887 - JARVIS - INFO - [MainThread] - start:240 - Starting J.A.R.V.I.S. system...
+2025-10-05 06:41:59,887 - JARVIS - INFO - [MainThread] - initialize_modules:166 - Initializing system modules...
+2025-10-05 06:41:59,887 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:93 - Initializing voice interface...
+2025-10-05 06:42:00,919 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_tts:134 - TTS engine initialized
+2025-10-05 06:42:01,688 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:155 - Adjusting for ambient noise...
+2025-10-05 06:42:01,689 - JARVIS.VoiceInterface - ERROR - [MainThread] - _initialize_stt:162 - Error initializing STT: 'NoneType' object has no attribute 'close'
+2025-10-05 06:42:01,692 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:163 - STT will be unavailable
+2025-10-05 06:42:01,698 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:104 - Voice interface initialized successfully
+2025-10-05 06:42:01,702 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 06:42:01,709 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 06:42:01,709 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-05 06:42:01,754 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-05 06:42:10,480 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:10,481 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:11,747 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:11,747 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:17,428 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 83.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:17,456 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:18,882 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 81.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:18,894 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:20,020 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 87.6, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:20,020 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:20,363 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 302 running applications
+2025-10-05 06:42:20,364 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-05 06:42:20,365 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-05 06:42:20,368 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-05 06:42:20,369 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:63 - Initializing network manager...
+2025-10-05 06:42:20,501 - JARVIS.NetworkManager - INFO - [MainThread] - _scan_network_interfaces:113 - Found 6 network interfaces
+2025-10-05 06:42:21,136 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 97.2, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:21,138 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:22,324 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 95.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:22,324 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:24,197 - JARVIS.NetworkManager - INFO - [MainThread] - _set_default_interface:145 - Default interface set to: 192.168.2.8
+2025-10-05 06:42:24,758 - JARVIS.NetworkManager - INFO - [MainThread] - start_monitoring:160 - Network monitoring started
+2025-10-05 06:42:24,811 - JARVIS.NetworkManager - INFO - [NetworkMonitor] - _monitor_loop:173 - Network monitoring loop started
+2025-10-05 06:42:24,812 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:74 - Network manager initialized
+2025-10-05 06:42:25,001 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:69 - Initializing security manager...
+2025-10-05 06:42:25,315 - JARVIS.SecurityManager - INFO - [MainThread] - _initialize_encryption:129 - Using existing master encryption key
+2025-10-05 06:42:25,751 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:80 - Security manager initialized
+2025-10-05 06:42:25,783 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:101 - Loading plugins...
+2025-10-05 06:42:39,606 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:39,727 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:45,512 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 99.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:45,512 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:46,732 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 91.2, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:46,734 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:47,869 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 86.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:47,869 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:48,975 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:42:49,545 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:110 - Loaded 6 plugins
+2025-10-05 06:42:49,547 - JARVIS - INFO - [MainThread] - _initialize_advanced_components:209 - Initializing advanced AI components...
+2025-10-05 06:42:49,632 - JARVIS.SelfDevelopment - INFO - [MainThread] - initialize:173 - Initializing self-development engine...
+2025-10-05 06:42:49,635 - JARVIS.WebSearcher - INFO - [MainThread] - initialize:95 - Initializing web searcher...
+2025-10-05 06:42:49,638 - JARVIS.WebSearcher - INFO - [MainThread] - initialize:100 - Web searcher initialized
+2025-10-05 06:42:49,643 - JARVIS.InfoCollector - INFO - [MainThread] - initialize:340 - Initializing info collector...
+2025-10-05 06:42:50,113 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 84.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:42:50,116 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:04,655 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 2036)
+2025-10-05 06:43:04,879 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 23684)
+2025-10-05 06:43:07,395 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:07,555 - JARVIS.InfoCollector - INFO - [MainThread] - initialize:352 - Info collector initialized
+2025-10-05 06:43:07,557 - JARVIS.ReasoningEngine - INFO - [MainThread] - initialize:82 - Initializing reasoning engine...
+2025-10-05 06:43:07,562 - JARVIS.ReasoningEngine - INFO - [MainThread] - initialize:90 - Reasoning engine initialized
+2025-10-05 06:43:07,563 - JARVIS.CodeGenerator - INFO - [MainThread] - initialize:50 - Initializing code generator...
+2025-10-05 06:43:07,563 - JARVIS.CodeGenerator - INFO - [MainThread] - initialize:55 - Code generator initialized
+2025-10-05 06:43:07,563 - JARVIS.Tester - INFO - [MainThread] - initialize:399 - Initializing comprehensive testing system...
+2025-10-05 06:43:07,563 - JARVIS.Tester - INFO - [MainThread] - test_code:413 - Starting comprehensive testing for basic
+2025-10-05 06:43:07,616 - JARVIS.Tester - ERROR - [MainThread] - test_code:476 - Error in comprehensive testing: 'security_issue'
+2025-10-05 06:43:07,617 - JARVIS.Updater - INFO - [MainThread] - initialize:64 - Initializing update manager...
+2025-10-05 06:43:07,629 - JARVIS.Updater - INFO - [MainThread] - initialize:76 - Update manager initialized
+2025-10-05 06:43:07,631 - JARVIS.Evolver - INFO - [MainThread] - initialize:318 - Initializing genetic algorithm evolver...
+2025-10-05 06:43:07,840 - JARVIS.Validator - INFO - [MainThread] - initialize:615 - Initializing advanced validator...
+2025-10-05 06:43:07,858 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:92 - Initializing advanced research engine...
+2025-10-05 06:43:08,531 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 84.3, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:08,532 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:13,495 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:15,544 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:16,787 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:16,809 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:102 - Credibility assessment model loaded
+2025-10-05 06:43:16,809 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:109 - Advanced research engine initialized
+2025-10-05 06:43:16,809 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:73 - Initializing knowledge synthesizer...
+2025-10-05 06:43:17,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.8, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:17,948 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:19,081 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 98.9, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:19,082 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:32,378 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:32,379 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:39,965 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 99.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:39,976 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:41,008 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 1520)
+2025-10-05 06:43:41,009 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 6620)
+2025-10-05 06:43:41,009 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 6708)
+2025-10-05 06:43:41,009 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 7692)
+2025-10-05 06:43:41,009 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 7996)
+2025-10-05 06:43:41,009 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 10448)
+2025-10-05 06:43:41,010 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 10532)
+2025-10-05 06:43:41,010 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 11072)
+2025-10-05 06:43:41,010 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 13284)
+2025-10-05 06:43:41,010 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 16396)
+2025-10-05 06:43:41,011 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 16612)
+2025-10-05 06:43:41,011 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 18832)
+2025-10-05 06:43:41,011 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 23004)
+2025-10-05 06:43:41,012 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 23032)
+2025-10-05 06:43:41,012 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 24416)
+2025-10-05 06:43:41,012 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: chrome.exe (PID: 24424)
+2025-10-05 06:43:41,181 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:42,284 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:43,393 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:44,299 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:87 - ML models loaded successfully
+2025-10-05 06:43:44,306 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:95 - Knowledge graph initialized
+2025-10-05 06:43:44,307 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:97 - Knowledge synthesizer initialized
+2025-10-05 06:43:44,311 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:83 - Initializing innovation engine...
+2025-10-05 06:43:47,473 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:49,054 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:50,156 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:50,756 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:98 - Innovation models loaded successfully
+2025-10-05 06:43:50,758 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:120 - Initializing SentenceTransformer for solutions...
+2025-10-05 06:43:51,258 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:52,396 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:43:53,502 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 82.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:43:53,502 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:00,307 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:01,448 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 96.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:44:01,449 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:02,469 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:122 - Solutions embedding model initialized
+2025-10-05 06:44:02,622 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:44:02,634 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:03,786 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 99.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:44:03,786 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:03,883 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:137 - Solutions database initialized
+2025-10-05 06:44:03,960 - JARVIS.InnovationEngine - INFO - [MainThread] - _seed_solutions_database:156 - Solutions database already contains 8 solutions
+2025-10-05 06:44:03,960 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:109 - Innovation engine initialized
+2025-10-05 06:44:03,962 - JARVIS.CodeOptimizer - INFO - [MainThread] - initialize:62 - Initializing code optimizer...
+2025-10-05 06:44:03,964 - JARVIS.CodeOptimizer - INFO - [MainThread] - initialize:67 - Code optimizer initialized
+2025-10-05 06:44:03,965 - JARVIS.SecurityValidator - INFO - [MainThread] - initialize:56 - Initializing security validator...
+2025-10-05 06:44:03,967 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: type
+2025-10-05 06:44:03,967 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: severity
+2025-10-05 06:44:03,968 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: description
+2025-10-05 06:44:03,968 - JARVIS.SecurityValidator - INFO - [MainThread] - initialize:61 - Security validator initialized
+2025-10-05 06:44:03,969 - JARVIS.PerformanceAnalyzer - INFO - [MainThread] - initialize:62 - Initializing performance analyzer...
+2025-10-05 06:44:03,972 - JARVIS.PerformanceAnalyzer - INFO - [MainThread] - initialize:68 - Performance analyzer initialized
+2025-10-05 06:44:03,974 - JARVIS.IntegrationTester - INFO - [MainThread] - initialize:56 - Initializing integration tester...
+2025-10-05 06:44:03,975 - JARVIS.IntegrationTester - INFO - [MainThread] - _load_system_components:1108 - Loading JARVIS system components for integration testing...
+2025-10-05 06:44:03,983 - JARVIS.IntegrationTester - INFO - [MainThread] - _load_system_components:1145 - Loaded 8 system components for testing
+2025-10-05 06:44:03,984 - JARVIS.IntegrationTester - INFO - [MainThread] - _setup_test_environment:1154 - Setting up integration test environment...
+2025-10-05 06:44:03,993 - JARVIS.IntegrationTester - INFO - [MainThread] - _setup_test_environment:1204 - Integration test environment setup complete
+2025-10-05 06:44:03,993 - JARVIS.IntegrationTester - INFO - [MainThread] - initialize:64 - Integration tester initialized
+2025-10-05 06:44:03,993 - JARVIS.DeploymentOrchestrator - INFO - [MainThread] - initialize:66 - Initializing deployment orchestrator...
+2025-10-05 06:44:03,996 - JARVIS.DeploymentOrchestrator - INFO - [MainThread] - initialize:74 - Deployment orchestrator initialized
+2025-10-05 06:44:04,001 - JARVIS.SelfDevelopment - INFO - [MainThread] - initialize:202 - Self-development engine initialized
+2025-10-05 06:44:04,023 - JARVIS.ApplicationHealer - INFO - [MainThread] - initialize:96 - Initializing application healer...
+2025-10-05 06:44:04,023 - JARVIS.ErrorDetector - INFO - [MainThread] - initialize:21 - Error Detector initialized
+2025-10-05 06:44:04,023 - JARVIS.Debugger - INFO - [MainThread] - initialize:489 - Initializing advanced debugger system...
+2025-10-05 06:44:04,025 - JARVIS.Debugger - INFO - [MainThread] - debug_error:511 - Starting comprehensive error analysis: debug_1759626844_6485
+2025-10-05 06:44:04,029 - JARVIS.Debugger - INFO - [MainThread] - debug_error:618 - Error analysis completed in 0.00s with 0.0% confidence
+2025-10-05 06:44:04,049 - JARVIS.FixGenerator - INFO - [MainThread] - initialize:372 - Initializing advanced fix generator...
+2025-10-05 06:44:04,050 - JARVIS.FixGenerator - INFO - [MainThread] - generate_fix:392 - Generating fix for error: test_error
+2025-10-05 06:44:04,057 - JARVIS.FixGenerator - INFO - [MainThread] - generate_fix:439 - Fix generated in 0.01s with 0.7% confidence
+2025-10-05 06:44:04,168 - JARVIS.PatchApplier - INFO - [MainThread] - initialize:419 - Initializing advanced patch applier...
+2025-10-05 06:44:04,169 - JARVIS.PatchApplier - INFO - [MainThread] - initialize:427 - Advanced patch applier initialized successfully
+2025-10-05 06:44:04,170 - JARVIS.RecoveryManager - INFO - [MainThread] - initialize:671 - Initializing advanced recovery manager...
+2025-10-05 06:44:04,208 - JARVIS.RecoveryManager - INFO - [MainThread] - initialize:688 - Advanced recovery manager initialized successfully
+2025-10-05 06:44:04,209 - JARVIS.Optimizer - INFO - [MainThread] - initialize:509 - Initializing advanced system optimizer...
+2025-10-05 06:44:04,212 - JARVIS.Optimizer - INFO - [MainThread] - initialize:518 - Advanced optimizer initialized successfully
+2025-10-05 06:44:04,213 - JARVIS.HealthReporter - INFO - [MainThread] - initialize:372 - Initializing advanced health reporter...
+2025-10-05 06:44:04,215 - JARVIS.HealthReporter - INFO - [MainThread] - initialize:383 - Advanced health reporter initialized successfully
+2025-10-05 06:44:04,215 - JARVIS.Predictor - INFO - [MainThread] - initialize:387 - Initializing advanced predictive analytics system...
+2025-10-05 06:44:04,217 - JARVIS.Predictor - INFO - [MainThread] - initialize:399 - Advanced predictor initialized successfully
+2025-10-05 06:44:04,218 - JARVIS.AdvancedDiagnostics - INFO - [MainThread] - initialize:67 - Initializing advanced diagnostics...
+2025-10-05 06:44:09,543 - JARVIS.AdvancedDiagnostics - INFO - [MainThread] - _establish_baseline_metrics:910 - Baseline metrics established
+2025-10-05 06:44:09,656 - JARVIS.AdvancedDiagnostics - INFO - [MainThread] - initialize:75 - Advanced diagnostics initialized
+2025-10-05 06:44:09,841 - JARVIS.PredictiveMaintenance - INFO - [MainThread] - initialize:72 - Initializing predictive maintenance...
+2025-10-05 06:44:10,062 - JARVIS.PredictiveMaintenance - INFO - [MainThread] - initialize:86 - Predictive maintenance initialized
+2025-10-05 06:44:10,221 - JARVIS.SystemAnalyzer - INFO - [MainThread] - initialize:70 - Initializing system analyzer...
+2025-10-05 06:44:10,354 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: svchost.exe (PID: 18064)
+2025-10-05 06:44:10,421 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: NgcIso.exe (PID: 18328)
+2025-10-05 06:44:10,663 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 06:44:10,663 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:11,372 - JARVIS.SystemAnalyzer - INFO - [MainThread] - _perform_initial_system_analysis:1510 - Initial system analysis completed
+2025-10-05 06:44:11,372 - JARVIS.SystemAnalyzer - ERROR - [MainThread] - initialize:81 - Error initializing system analyzer: 'SystemAnalyzer' object has no attribute '_build_component_relationships'
+2025-10-05 06:44:11,372 - JARVIS.ApplicationHealer - ERROR - [MainThread] - initialize:130 - Error initializing application healer: 'SystemAnalyzer' object has no attribute '_build_component_relationships'
+2025-10-05 06:44:11,373 - JARVIS - ERROR - [MainThread] - _initialize_advanced_components:234 - Error initializing advanced components: 'SystemAnalyzer' object has no attribute '_build_component_relationships'
+2025-10-05 06:44:11,374 - JARVIS - INFO - [MainThread] - initialize_modules:200 - All modules initialized successfully
+2025-10-05 06:44:11,374 - JARVIS - INFO - [MainThread] - _main_loop:259 - J.A.R.V.I.S. is now running
+2025-10-05 06:44:11,379 - JARVIS - ERROR - [MainThread] - _main_loop:282 - Error in main loop: 'str' object has no attribute 'value'
+2025-10-05 06:44:11,380 - JARVIS - INFO - [MainThread] - _sync_shutdown:487 - Performing synchronous shutdown...
+2025-10-05 06:44:11,799 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 06:44:11,901 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:143 - System monitoring loop ended
+2025-10-05 06:44:11,906 - JARVIS.SystemMonitor - INFO - [MainThread] - stop_monitoring:101 - System monitoring stopped
+2025-10-05 06:44:11,907 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:711 - Shutting down voice interface...
+2025-10-05 06:44:11,908 - JARVIS.VoiceInterface - INFO - [MainThread] - stop_continuous_listening:416 - Continuous listening stopped
+2025-10-05 06:44:11,912 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:733 - Voice interface shutdown complete
+2025-10-05 06:44:11,913 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:649 - Unloading all plugins...
+2025-10-05 06:44:11,913 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: voice_interface
+2025-10-05 06:44:11,914 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: system_monitor
+2025-10-05 06:44:11,915 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: application_controller
+2025-10-05 06:44:11,915 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: file_manager
+2025-10-05 06:44:11,915 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: network_manager
+2025-10-05 06:44:11,915 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: security_manager
+2025-10-05 06:44:11,915 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:662 - All plugins unloaded
+2025-10-05 06:44:11,919 - JARVIS - INFO - [MainThread] - _sync_shutdown:538 - J.A.R.V.I.S. system shutdown complete
+2025-10-05 06:44:11,930 - JARVIS.Updater - INFO - [MainThread] - check_for_updates:93 - Checking for updates...
+2025-10-05 06:44:11,982 - JARVIS.Updater - ERROR - [MainThread] - _fetch_version_info:336 - HTTP error fetching version info: HTTPSConnectionPool(host='api.jarvis.ai', port=443): Max retries exceeded with url: /updates/version.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000243C9BF1310>: Failed to resolve 'api.jarvis.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-10-05 06:44:11,984 - JARVIS.SelfDevelopment - INFO - [MainThread] - _process_tasks:254 - Self-development task processing started
+2025-10-05 06:44:12,995 - JARVIS.Predictor - DEBUG - [MainThread] - _collect_current_metrics:499 - Error collecting metrics: name 'threading' is not defined
+2025-10-05 06:44:13,000 - JARVIS - INFO - [MainThread] - _sync_shutdown:487 - Performing synchronous shutdown...
+2025-10-05 06:44:13,001 - JARVIS.SystemMonitor - INFO - [MainThread] - stop_monitoring:101 - System monitoring stopped
+2025-10-05 06:44:13,001 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:711 - Shutting down voice interface...
+2025-10-05 06:44:13,001 - JARVIS.VoiceInterface - INFO - [MainThread] - stop_continuous_listening:416 - Continuous listening stopped
+2025-10-05 06:44:13,001 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:733 - Voice interface shutdown complete
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:649 - Unloading all plugins...
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: voice_interface
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: system_monitor
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: application_controller
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: file_manager
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: network_manager
+2025-10-05 06:44:13,001 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: security_manager
+2025-10-05 06:44:13,002 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:662 - All plugins unloaded
+2025-10-05 06:44:13,002 - JARVIS - INFO - [MainThread] - _sync_shutdown:538 - J.A.R.V.I.S. system shutdown complete

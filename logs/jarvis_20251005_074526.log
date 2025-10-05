@@ -1,0 +1,3 @@
+2025-10-05 07:45:26,111 - JARVIS - INFO - [EventProcessor] - _process_events_loop:262 - Event processing loop started
+2025-10-05 07:45:26,112 - JARVIS - INFO - [MainThread] - start_processing:141 - Event processing started
+2025-10-05 07:45:26,114 - JARVIS - INFO - [MainThread] - __init__:83 - J.A.R.V.I.S. system initialized

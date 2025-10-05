@@ -1,0 +1,7 @@
+2025-10-05 07:59:18,212 - JARVIS - INFO - [EventProcessor] - _process_events_loop:262 - Event processing loop started
+2025-10-05 07:59:18,212 - JARVIS - INFO - [MainThread] - start_processing:141 - Event processing started
+2025-10-05 07:59:18,214 - JARVIS - INFO - [MainThread] - __init__:83 - J.A.R.V.I.S. system initialized
+2025-10-05 07:59:18,216 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 07:59:18,217 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 07:59:22,721 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:143 - System monitoring loop ended
+2025-10-05 07:59:22,723 - JARVIS.SystemMonitor - INFO - [MainThread] - stop_monitoring:101 - System monitoring stopped

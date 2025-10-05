@@ -1,0 +1,83 @@
+2025-10-04 06:34:18,989 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-04 06:34:18,990 - JARVIS - INFO - [MainThread] - initialize_modules:166 - Initializing system modules...
+2025-10-04 06:34:18,990 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:93 - Initializing voice interface...
+2025-10-04 06:34:20,262 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_tts:134 - TTS engine initialized
+2025-10-04 06:34:20,967 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:155 - Adjusting for ambient noise...
+2025-10-04 06:34:20,968 - JARVIS.VoiceInterface - ERROR - [MainThread] - _initialize_stt:162 - Error initializing STT: 'NoneType' object has no attribute 'close'
+2025-10-04 06:34:20,968 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:163 - STT will be unavailable
+2025-10-04 06:34:20,969 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:104 - Voice interface initialized successfully
+2025-10-04 06:34:20,971 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-04 06:34:20,971 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-04 06:34:20,971 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-04 06:34:20,972 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-04 06:34:26,616 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-04 06:34:26,644 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:27,810 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:28,351 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 273 running applications
+2025-10-04 06:34:28,351 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-04 06:34:28,351 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-04 06:34:28,352 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-04 06:34:28,353 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:63 - Initializing network manager...
+2025-10-04 06:34:28,479 - JARVIS.NetworkManager - INFO - [MainThread] - _scan_network_interfaces:113 - Found 7 network interfaces
+2025-10-04 06:34:28,691 - JARVIS.NetworkManager - INFO - [MainThread] - _set_default_interface:145 - Default interface set to: 192.168.2.8
+2025-10-04 06:34:28,693 - JARVIS.NetworkManager - INFO - [NetworkMonitor] - _monitor_loop:173 - Network monitoring loop started
+2025-10-04 06:34:28,693 - JARVIS.NetworkManager - INFO - [MainThread] - start_monitoring:160 - Network monitoring started
+2025-10-04 06:34:28,733 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:74 - Network manager initialized
+2025-10-04 06:34:28,757 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:66 - Initializing security manager...
+2025-10-04 06:34:28,758 - JARVIS.SecurityManager - INFO - [MainThread] - _initialize_encryption:126 - Using existing master encryption key
+2025-10-04 06:34:28,759 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:77 - Security manager initialized
+2025-10-04 06:34:28,759 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:101 - Loading plugins...
+2025-10-04 06:34:28,930 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:29,741 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:110 - Loaded 6 plugins
+2025-10-04 06:34:29,741 - JARVIS - INFO - [MainThread] - _initialize_advanced_components:209 - Initializing advanced AI components...
+2025-10-04 06:34:29,743 - JARVIS - ERROR - [MainThread] - _initialize_advanced_components:234 - Error initializing advanced components: 
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords[0m
+
+  Searched in:
+    - 'C:\\Users\\ANISH/nltk_data'
+    - 'C:\\Users\\ANISH\\AppData\\Local\\Programs\\Python\\Python313\\nltk_data'
+    - 'C:\\Users\\ANISH\\AppData\\Local\\Programs\\Python\\Python313\\share\\nltk_data'
+    - 'C:\\Users\\ANISH\\AppData\\Local\\Programs\\Python\\Python313\\lib\\nltk_data'
+    - 'C:\\Users\\ANISH\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-10-04 06:34:29,744 - JARVIS - INFO - [MainThread] - initialize_modules:200 - All modules initialized successfully
+2025-10-04 06:34:29,744 - JARVIS.VoiceInterface - DEBUG - [MainThread] - speak:201 - Queued speech: Hello, this is a test message...
+2025-10-04 06:34:29,744 - JARVIS.MemoryManager - INFO - [MainThread] - initialize:79 - Initializing memory manager...
+2025-10-04 06:34:29,744 - JARVIS.MemoryManager - INFO - [MainThread] - _initialize_vector_database:101 - Initializing SentenceTransformer embedding model...
+2025-10-04 06:34:30,032 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:31,149 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:34,810 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:35,991 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:36,188 - JARVIS.MemoryManager - INFO - [MainThread] - _initialize_vector_database:103 - Embedding model initialized
+2025-10-04 06:34:36,407 - JARVIS.MemoryManager - INFO - [MainThread] - initialize:90 - Memory manager initialized
+2025-10-04 06:34:36,408 - JARVIS.MemoryManager - ERROR - [MainThread] - _generate_embedding:258 - Error generating embedding: SentenceTransformer.encode() has been called with additional keyword arguments that this model does not use: ['convert_to_list']. As per SentenceTransformer.get_model_kwargs(), this model does not accept any additional keyword arguments.
+2025-10-04 06:34:36,409 - JARVIS.MemoryManager - DEBUG - [MainThread] - store_memory:194 - Stored memory: mem_1759539876_0
+2025-10-04 06:34:36,409 - JARVIS.MemoryManager - ERROR - [MainThread] - _generate_embedding:258 - Error generating embedding: SentenceTransformer.encode() has been called with additional keyword arguments that this model does not use: ['convert_to_list']. As per SentenceTransformer.get_model_kwargs(), this model does not accept any additional keyword arguments.
+2025-10-04 06:34:36,410 - JARVIS.MemoryManager - ERROR - [MainThread] - _generate_embedding:258 - Error generating embedding: SentenceTransformer.encode() has been called with additional keyword arguments that this model does not use: ['convert_to_list']. As per SentenceTransformer.get_model_kwargs(), this model does not accept any additional keyword arguments.
+2025-10-04 06:34:36,480 - JARVIS.SecurityManager - ERROR - [MainThread] - _create_default_admin:351 - Error creating default admin user: name 'json' is not defined
+2025-10-04 06:34:36,606 - JARVIS.SecurityManager - ERROR - [MainThread] - _log_security_event:618 - Error logging security event: 'EventManager' object has no attribute 'EventType'
+2025-10-04 06:34:36,847 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:101 - Loading plugins...
+2025-10-04 06:34:37,098 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:38,107 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: WmiApSrv.exe (PID: 17872)
+2025-10-04 06:34:38,107 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: svchost.exe (PID: 19600)
+2025-10-04 06:34:38,122 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:110 - Loaded 12 plugins
+2025-10-04 06:34:38,122 - JARVIS.Updater - INFO - [MainThread] - initialize:64 - Initializing update manager...
+2025-10-04 06:34:38,123 - JARVIS.Updater - INFO - [MainThread] - initialize:76 - Update manager initialized
+2025-10-04 06:34:38,123 - JARVIS.Updater - INFO - [MainThread] - check_for_updates:93 - Checking for updates...
+2025-10-04 06:34:38,185 - JARVIS.Updater - ERROR - [MainThread] - _fetch_version_info:336 - HTTP error fetching version info: HTTPSConnectionPool(host='api.jarvis.ai', port=443): Max retries exceeded with url: /updates/version.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000016B7AC42E90>: Failed to resolve 'api.jarvis.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-10-04 06:34:38,299 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 06:34:38,458 - JARVIS.Updater - INFO - [MainThread] - check_for_updates:93 - Checking for updates...
+2025-10-04 06:34:38,462 - JARVIS.Updater - ERROR - [MainThread] - _fetch_version_info:336 - HTTP error fetching version info: HTTPSConnectionPool(host='api.jarvis.ai', port=443): Max retries exceeded with url: /updates/version.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000016B7AC43750>: Failed to resolve 'api.jarvis.ai' ([Errno 11001] getaddrinfo failed)"))

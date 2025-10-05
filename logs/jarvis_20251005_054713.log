@@ -1,0 +1,99 @@
+2025-10-05 05:47:13,123 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,133 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,133 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,134 - JARVIS - DEBUG - [MainThread] - emit_event:182 - Event emitted: Event(custom, NORMAL, custom)
+2025-10-05 05:47:13,134 - JARVIS - DEBUG - [MainThread] - emit_event:182 - Event emitted: Event(custom, NORMAL, custom)
+2025-10-05 05:47:13,144 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,144 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,144 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,153 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,153 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,153 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,153 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,163 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,163 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,163 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,163 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,163 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,165 - JARVIS.FileManager - INFO - [MainThread] - create_file:125 - Created file: C:\Users\ANISH\AppData\Local\Temp\tmpqm2f33x3\test_dir\test.txt (12 bytes)
+2025-10-05 05:47:13,165 - JARVIS.FileManager - INFO - [MainThread] - create_file:125 - Created file: C:\Users\ANISH\AppData\Local\Temp\tmpqm2f33x3\test_dir\test.txt (12 bytes)
+2025-10-05 05:47:13,165 - JARVIS.FileManager - INFO - [MainThread] - create_file:125 - Created file: C:\Users\ANISH\AppData\Local\Temp\tmpqm2f33x3\test_dir\test.txt (12 bytes)
+2025-10-05 05:47:13,165 - JARVIS.FileManager - INFO - [MainThread] - create_file:125 - Created file: C:\Users\ANISH\AppData\Local\Temp\tmpqm2f33x3\test_dir\test.txt (12 bytes)
+2025-10-05 05:47:13,165 - JARVIS.FileManager - INFO - [MainThread] - create_file:125 - Created file: C:\Users\ANISH\AppData\Local\Temp\tmpqm2f33x3\test_dir\test.txt (12 bytes)
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,177 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+rted
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:47:13,179 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:14,255 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,694 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,708 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,720 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,734 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,746 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,758 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:16,884 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:47:18,191 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}

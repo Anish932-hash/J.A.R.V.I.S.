@@ -1,0 +1,84 @@
+{
+  "test_timestamp": 1759540094.234347,
+  "total_tests": 10,
+  "passed_tests": 9,
+  "failed_tests": 1,
+  "overall_success_rate": 90.0,
+  "detailed_results": {
+    "jarvis_initialization": {
+      "success": true,
+      "init_time": 8.903641939163208,
+      "modules_initialized": 7,
+      "total_modules": 7,
+      "module_status": {
+        "voice_interface": true,
+        "system_monitor": true,
+        "app_controller": true,
+        "file_manager": true,
+        "network_manager": true,
+        "security_manager": true,
+        "plugin_manager": true
+      }
+    },
+    "voice_interface": {
+      "success": true,
+      "voices_available": 2,
+      "speech_test": "passed",
+      "engine_type": "pyttsx3"
+    },
+    "system_monitoring": {
+      "success": true,
+      "system_info_available": true,
+      "cpu_monitoring": true,
+      "memory_monitoring": true,
+      "disk_monitoring": true,
+      "readings_count": 7
+    },
+    "memory_management": {
+      "success": true,
+      "memory_stored": true,
+      "memory_retrieved": false,
+      "context_generated": false,
+      "vector_db_available": true,
+      "embedding_model_loaded": true
+    },
+    "command_processing": {
+      "success": true,
+      "command_execution": true,
+      "command_parsing": true,
+      "registered_patterns": 13,
+      "registered_handlers": 0
+    },
+    "security_features": {
+      "success": true,
+      "authentication_working": false,
+      "encryption_working": true,
+      "session_management": false,
+      "audit_logging": true
+    },
+    "plugin_system": {
+      "success": true,
+      "plugins_loaded": 12,
+      "plugins_enabled": 6,
+      "plugin_directories": 2,
+      "hooks_registered": 0
+    },
+    "update_system": {
+      "success": true,
+      "version_check_attempted": true,
+      "current_version": "2.0.0",
+      "update_available": false,
+      "config_loaded": true
+    },
+    "code_testing": {
+      "success": false,
+      "error": "'JARVIS' object has no attribute 'jarvis'"
+    },
+    "gui_framework": {
+      "success": true,
+      "pyqt6_available": true,
+      "qt_version": "6.x",
+      "widgets_available": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+2025-10-05 05:37:54,411 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:37:59,057 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:37:59,057 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:148 - Initializing essential modules for terminal mode...
+2025-10-05 05:37:59,059 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:37:59,059 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:37:59,061 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-05 05:37:59,064 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-05 05:38:06,235 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:38:07,506 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 93.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:38:07,514 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:38:08,623 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:38:08,623 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:38:09,741 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 87.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:38:09,755 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:38:10,469 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 289 running applications
+2025-10-05 05:38:10,470 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-05 05:38:10,470 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-05 05:38:10,472 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-05 05:38:10,473 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:177 - Essential modules initialized for terminal mode
+2025-10-05 05:38:10,692 - JARVIS.APIManager - INFO - [MainThread] - shutdown:956 - Shutting down API manager...
+2025-10-05 05:38:10,695 - JARVIS.APIManager - INFO - [MainThread] - shutdown:968 - API manager shutdown complete

@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  jarvis:
+    build: .
+    container_name: jarvis-ai
+    restart: unless-stopped
+
+    # Environment variables
+    environment:
+      - DISPLAY=${DISPLAY}
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - AZURE_SPEECH_KEY=${AZURE_SPEECH_KEY}
+
+    # Volume mounts for persistent data
+    volumes:
+      - jarvis_data:/home/jarvis/jarvis/data
+      - jarvis_logs:/home/jarvis/jarvis/logs
+      - jarvis_config:/home/jarvis/jarvis/config
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw  # X11 forwarding for GUI
+      - ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native  # PulseAudio
+
+    # Network configuration
+    networks:
+      - jarvis_network
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('JARVIS is running')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  # Optional: Vector database service
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: jarvis_vectordb
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    networks:
+      - jarvis_network
+
+  # Optional: Monitoring service
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: jarvis_monitoring
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - jarvis_network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+
+  # Optional: Grafana dashboard
+  grafana:
+    image: grafana/grafana:latest
+    container_name: jarvis_dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./config/grafana_dashboards:/etc/grafana/provisioning/dashboards
+      - ./config/grafana_datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - jarvis_network
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=jarvis_admin
+
+# Named volumes for data persistence
+volumes:
+  jarvis_data:
+    driver: local
+  jarvis_logs:
+    driver: local
+  jarvis_config:
+    driver: local
+  chroma_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+# Network configuration
+networks:
+  jarvis_network:
+    driver: bridge
+    name: jarvis_network

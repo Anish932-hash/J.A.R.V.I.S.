@@ -1,0 +1,17 @@
+2025-10-04 14:51:29,197 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-04 14:51:29,198 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:147 - Initializing essential modules for terminal mode...
+2025-10-04 14:51:29,211 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-04 14:51:29,212 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-04 14:51:29,217 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-04 14:51:29,225 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-04 14:51:33,409 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 14:51:34,603 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 14:51:35,358 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-04 14:51:35,819 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 14:51:36,669 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 287 running applications
+2025-10-04 14:51:36,669 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-04 14:51:36,669 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-04 14:51:36,673 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-04 14:51:36,674 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:176 - Essential modules initialized for terminal mode
+2025-10-04 14:51:36,729 - JARVIS.APIManager - INFO - [MainThread] - shutdown:956 - Shutting down API manager...
+2025-10-04 14:51:36,730 - JARVIS.APIManager - INFO - [MainThread] - shutdown:968 - API manager shutdown complete

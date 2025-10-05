@@ -1,0 +1,27 @@
+2025-10-05 05:28:41,778 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:28:45,033 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:28:45,033 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:147 - Initializing essential modules for terminal mode...
+2025-10-05 05:28:45,034 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:28:45,034 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:28:45,035 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-05 05:28:45,037 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-05 05:28:51,300 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 85.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:28:51,300 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:28:52,277 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-05 05:28:53,003 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:28:53,003 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:28:54,206 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:28:54,207 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:28:56,140 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:28:56,141 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:29:08,149 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Photos.exe (PID: 14468)
+2025-10-05 05:29:08,377 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-05 05:29:09,005 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 273 running applications
+2025-10-05 05:29:09,021 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-05 05:29:09,089 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-05 05:29:09,250 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-05 05:29:09,391 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:176 - Essential modules initialized for terminal mode
+2025-10-05 05:29:11,918 - JARVIS.APIManager - INFO - [MainThread] - shutdown:956 - Shutting down API manager...
+2025-10-05 05:29:11,937 - JARVIS.APIManager - INFO - [MainThread] - shutdown:968 - API manager shutdown complete
+2025-10-05 05:29:13,281 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:29:13,323 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.4, 'threshold': 85, 'unit': 'percent'}

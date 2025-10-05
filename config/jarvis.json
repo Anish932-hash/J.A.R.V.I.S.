@@ -1,0 +1,35 @@
+{
+    "system": {
+        "name": "J.A.R.V.I.S.",
+        "version": "2.0.0",
+        "auto_start": true,
+        "enable_voice": true,
+        "enable_gui": true,
+        "log_level": "INFO"
+    },
+    "voice": {
+        "engine": "windows",
+        "voice": "default",
+        "rate": 200,
+        "volume": 0.8,
+        "wake_word": "jarvis"
+    },
+    "monitoring": {
+        "cpu_threshold": 80,
+        "memory_threshold": 85,
+        "disk_threshold": 90,
+        "enable_alerts": true
+    },
+    "security": {
+        "enable_face_recognition": false,
+        "enable_voice_auth": false,
+        "encryption_enabled": true,
+        "auto_lock": false
+    },
+    "gui": {
+        "theme": "futuristic_dark",
+        "transparency": 0.95,
+        "animations": true,
+        "holographic_effects": true
+    }
+}

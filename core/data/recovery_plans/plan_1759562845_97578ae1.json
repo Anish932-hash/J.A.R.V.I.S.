@@ -1,0 +1,44 @@
+{
+  "plan_id": "plan_1759562845_97578ae1",
+  "name": "Configuration Rollback",
+  "description": "Rollback system configuration to previous state",
+  "steps": [
+    {
+      "type": "command",
+      "description": "Backup current configuration",
+      "parameters": {
+        "command": "cp -r /etc /etc.backup.pre_rollback",
+        "timeout": 30
+      },
+      "estimated_duration": 15
+    },
+    {
+      "type": "file_operation",
+      "description": "Restore configuration from snapshot",
+      "parameters": {
+        "operation": "copy",
+        "source": "/snapshot/config",
+        "destination": "/etc"
+      },
+      "estimated_duration": 20
+    },
+    {
+      "type": "service_control",
+      "description": "Restart affected services",
+      "parameters": {
+        "service": "all",
+        "action": "restart"
+      },
+      "estimated_duration": 30
+    }
+  ],
+  "estimated_duration": 65,
+  "risk_level": "medium",
+  "prerequisites": [
+    "snapshot_available",
+    "backup_power"
+  ],
+  "created_at": 1759562845.3992152,
+  "last_tested": null,
+  "success_rate": 0.0
+}

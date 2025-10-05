@@ -1,0 +1,25 @@
+2025-10-05 05:35:29,584 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-05 05:35:29,585 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:148 - Initializing essential modules for terminal mode...
+2025-10-05 05:35:29,612 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-05 05:35:29,614 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-05 05:35:29,634 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-05 05:35:29,637 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-05 05:35:39,159 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 98.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:35:39,159 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:35:40,395 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 86.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:35:40,430 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:35:50,263 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:35:50,264 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:35:51,666 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 96.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:35:51,667 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:35:57,057 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 288 running applications
+2025-10-05 05:35:57,098 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-05 05:35:57,128 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-05 05:35:57,522 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-05 05:35:57,571 - JARVIS - INFO - [MainThread] - _initialize_essential_modules_only:177 - Essential modules initialized for terminal mode
+2025-10-05 05:36:00,008 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:36:00,072 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-05 05:36:01,464 - JARVIS.APIManager - INFO - [MainThread] - shutdown:956 - Shutting down API manager...
+2025-10-05 05:36:01,711 - JARVIS.APIManager - INFO - [MainThread] - shutdown:968 - API manager shutdown complete
+2025-10-05 05:36:02,781 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 92.9, 'threshold': 80, 'unit': 'percent'}
+2025-10-05 05:36:02,827 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.3, 'threshold': 85, 'unit': 'percent'}

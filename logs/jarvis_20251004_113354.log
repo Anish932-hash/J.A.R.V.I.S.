@@ -1,0 +1,969 @@
+2025-10-04 11:33:54,309 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-04 11:33:54,315 - JARVIS - INFO - [MainThread] - initialize_modules:166 - Initializing system modules...
+2025-10-04 11:33:54,315 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:93 - Initializing voice interface...
+2025-10-04 11:33:55,469 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_tts:134 - TTS engine initialized
+2025-10-04 11:33:56,096 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:155 - Adjusting for ambient noise...
+2025-10-04 11:33:56,097 - JARVIS.VoiceInterface - ERROR - [MainThread] - _initialize_stt:162 - Error initializing STT: 'NoneType' object has no attribute 'close'
+2025-10-04 11:33:56,097 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:163 - STT will be unavailable
+2025-10-04 11:33:56,098 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:104 - Voice interface initialized successfully
+2025-10-04 11:33:56,099 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-04 11:33:56,099 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-04 11:33:56,099 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-04 11:33:56,101 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-04 11:34:01,638 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-04 11:34:01,639 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:02,823 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:03,672 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 277 running applications
+2025-10-04 11:34:03,672 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-04 11:34:03,672 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-04 11:34:03,675 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-04 11:34:03,676 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:63 - Initializing network manager...
+2025-10-04 11:34:03,908 - JARVIS.NetworkManager - INFO - [MainThread] - _scan_network_interfaces:113 - Found 8 network interfaces
+2025-10-04 11:34:03,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:05,049 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:05,099 - JARVIS.NetworkManager - INFO - [MainThread] - _set_default_interface:145 - Default interface set to: 192.168.2.8
+2025-10-04 11:34:05,101 - JARVIS.NetworkManager - INFO - [NetworkMonitor] - _monitor_loop:173 - Network monitoring loop started
+2025-10-04 11:34:05,101 - JARVIS.NetworkManager - INFO - [MainThread] - start_monitoring:160 - Network monitoring started
+2025-10-04 11:34:05,128 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:74 - Network manager initialized
+2025-10-04 11:34:05,129 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:66 - Initializing security manager...
+2025-10-04 11:34:05,175 - JARVIS.SecurityManager - INFO - [MainThread] - _initialize_encryption:126 - Using existing master encryption key
+2025-10-04 11:34:05,206 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:77 - Security manager initialized
+2025-10-04 11:34:05,206 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:101 - Loading plugins...
+2025-10-04 11:34:05,553 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:110 - Loaded 6 plugins
+2025-10-04 11:34:05,553 - JARVIS - INFO - [MainThread] - _initialize_advanced_components:209 - Initializing advanced AI components...
+2025-10-04 11:34:05,562 - JARVIS.SelfDevelopment - INFO - [MainThread] - initialize:173 - Initializing self-development engine...
+2025-10-04 11:34:05,562 - JARVIS.WebSearcher - INFO - [MainThread] - initialize:95 - Initializing web searcher...
+2025-10-04 11:34:05,562 - JARVIS.WebSearcher - INFO - [MainThread] - initialize:100 - Web searcher initialized
+2025-10-04 11:34:05,562 - JARVIS.InfoCollector - INFO - [MainThread] - initialize:340 - Initializing info collector...
+2025-10-04 11:34:06,176 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:13,631 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:15,525 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: smartscreen.exe (PID: 20332)
+2025-10-04 11:34:15,557 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 100.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:15,985 - JARVIS.InfoCollector - INFO - [MainThread] - initialize:352 - Info collector initialized
+2025-10-04 11:34:15,986 - JARVIS.ReasoningEngine - INFO - [MainThread] - initialize:82 - Initializing reasoning engine...
+2025-10-04 11:34:15,992 - JARVIS.ReasoningEngine - INFO - [MainThread] - initialize:90 - Reasoning engine initialized
+2025-10-04 11:34:15,993 - JARVIS.CodeGenerator - INFO - [MainThread] - initialize:50 - Initializing code generator...
+2025-10-04 11:34:15,994 - JARVIS.CodeGenerator - INFO - [MainThread] - initialize:55 - Code generator initialized
+2025-10-04 11:34:15,994 - JARVIS.Tester - INFO - [MainThread] - initialize:399 - Initializing comprehensive testing system...
+2025-10-04 11:34:15,997 - JARVIS.Tester - INFO - [MainThread] - test_code:413 - Starting comprehensive testing for basic
+2025-10-04 11:34:16,022 - JARVIS.Tester - ERROR - [MainThread] - test_code:476 - Error in comprehensive testing: 'security_issue'
+2025-10-04 11:34:16,024 - JARVIS.Updater - INFO - [MainThread] - initialize:64 - Initializing update manager...
+2025-10-04 11:34:16,034 - JARVIS.Updater - INFO - [MainThread] - initialize:76 - Update manager initialized
+2025-10-04 11:34:16,036 - JARVIS.Evolver - INFO - [MainThread] - initialize:318 - Initializing genetic algorithm evolver...
+2025-10-04 11:34:16,178 - JARVIS.Validator - INFO - [MainThread] - initialize:615 - Initializing advanced validator...
+2025-10-04 11:34:16,189 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:92 - Initializing advanced research engine...
+2025-10-04 11:34:16,765 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 81.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:34:16,765 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 100.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:25,129 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 100.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:27,640 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 91.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:34:27,641 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 99.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:36,100 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 94.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:34:36,142 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 100.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:38,128 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 87.8, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:34:38,129 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:42,954 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:44,863 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:46,045 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:47,194 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:48,296 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:55,660 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:56,785 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:57,897 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:34:59,016 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:04,936 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:06,087 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:07,188 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:08,290 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:09,411 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:15,786 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:16,975 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:18,077 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:19,179 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:20,301 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:25,376 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:26,503 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:27,604 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:28,707 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:29,826 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:30,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:32,045 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: pwsh.exe (PID: 18664)
+2025-10-04 11:35:34,779 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:35,899 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:37,001 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:38,693 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:39,813 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:40,915 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:42,016 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:47,607 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:48,728 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:49,830 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:50,932 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:52,050 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:57,352 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:58,474 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:35:59,574 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:00,676 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:01,797 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:02,952 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:07,207 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:08,328 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:09,434 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:10,535 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:11,654 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:12,777 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:13,941 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:14,208 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: WmiApSrv.exe (PID: 2796)
+2025-10-04 11:36:18,402 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:19,581 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:21,727 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:22,964 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:24,066 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:29,744 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:30,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:32,035 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 86.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:36:32,037 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:33,201 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 91.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:36:33,201 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:34,338 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:36:34,339 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:39,341 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: svchost.exe (PID: 17948)
+2025-10-04 11:36:39,875 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 82.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:36:39,876 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:41,006 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:42,183 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:43,296 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:44,415 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:49,589 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:50,712 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:51,813 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:52,916 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:54,032 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:55,151 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:58,813 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:36:59,930 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:01,031 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:02,745 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Scheduler.exe (PID: 4480)
+2025-10-04 11:37:02,746 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:03,864 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:04,965 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:06,066 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:11,490 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:12,615 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:13,716 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:14,818 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:15,937 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:17,056 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:21,171 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:22,292 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:23,396 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:24,498 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:25,615 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:26,145 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:102 - Credibility assessment model loaded
+2025-10-04 11:37:26,147 - JARVIS.AdvancedResearch - INFO - [MainThread] - initialize:109 - Advanced research engine initialized
+2025-10-04 11:37:26,150 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:73 - Initializing knowledge synthesizer...
+2025-10-04 11:37:26,851 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:27,990 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:31,853 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:32,973 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:34,085 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:35,210 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:36,348 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:37,449 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:38,552 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:44,573 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:45,700 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:46,801 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:47,993 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:49,116 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:52,263 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: svchost.exe (PID: 18916)
+2025-10-04 11:37:54,258 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:55,379 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:56,488 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:57,591 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:58,708 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:37:59,816 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:03,729 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:04,849 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:05,971 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:07,563 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:08,684 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:09,787 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:10,889 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:15,941 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: ShellHost.exe (PID: 21532)
+2025-10-04 11:38:16,316 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:17,439 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:18,541 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:19,643 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:20,785 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:21,906 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 85.3, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:38:21,907 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 99.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:28,171 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 92.8, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:38:28,172 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 99.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:29,304 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 85.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:38:29,304 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:30,407 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:31,509 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:32,627 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:37,248 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:38,369 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:39,471 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:40,572 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:41,691 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:42,806 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:46,683 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:47,803 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:48,904 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:50,008 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:51,133 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:52,244 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:53,391 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:57,041 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:58,158 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:59,264 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:38:59,880 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: audiodg.exe (PID: 21052)
+2025-10-04 11:39:00,420 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:01,540 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:02,642 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:03,745 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:08,646 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:09,766 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:10,868 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:11,970 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:13,089 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:14,201 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:18,221 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:19,339 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:20,442 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:21,544 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:22,686 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:23,804 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:24,946 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:28,815 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:29,936 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:31,057 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:32,237 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:33,355 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:34,457 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:35,558 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:40,829 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:41,952 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:43,054 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:44,156 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:45,277 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:46,390 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:50,205 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:51,323 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:52,424 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:53,527 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:54,645 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:55,757 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:39:56,897 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:00,472 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:01,592 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:02,728 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:03,904 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:05,021 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:06,123 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:07,226 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:12,569 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:13,692 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:14,794 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:15,896 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:17,015 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:18,124 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:22,461 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:33,006 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:34,128 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:35,919 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:37,021 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:38,140 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:39,242 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:45,087 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:46,213 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:47,315 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:48,417 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:49,539 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:54,674 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:55,796 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:56,897 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:58,000 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:40:59,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:00,225 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:04,301 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:05,420 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:06,524 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:07,627 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:08,745 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:09,882 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:11,097 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.2, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:41:11,112 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:15,167 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:16,291 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:18,137 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:19,292 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:20,394 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:21,495 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:27,166 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:28,287 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:29,388 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:30,490 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:31,611 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:37,247 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:38,376 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:39,477 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:40,579 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:41,706 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:47,046 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:48,171 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:49,273 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:50,376 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:51,504 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:52,615 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:54,003 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: svchost.exe (PID: 14392)
+2025-10-04 11:41:56,684 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:57,843 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:41:58,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:00,050 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:01,171 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:02,285 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:03,422 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:07,628 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:08,769 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:10,358 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:11,459 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:12,579 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:13,681 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:20,149 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:21,272 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:22,374 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:23,476 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:24,618 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:31,965 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:33,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 86.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:42:33,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:34,220 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:35,323 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:40,994 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:42,122 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:43,223 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:44,325 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:45,445 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:50,682 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:51,801 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:52,903 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:54,005 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:55,129 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:42:56,240 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:00,348 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:01,486 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:02,593 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:03,695 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:04,814 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:05,922 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:07,047 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:11,572 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:12,709 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:14,522 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:15,629 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:16,761 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:17,863 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:23,958 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:25,079 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:26,180 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:27,317 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:28,436 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:33,604 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:34,728 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:35,829 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:36,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:38,053 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:39,170 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:43,255 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:44,376 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:45,480 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:46,582 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:47,705 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:48,808 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:49,948 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:53,852 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:54,975 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:56,646 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:57,748 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:58,864 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:43:59,965 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:05,268 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:06,387 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:07,488 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:08,608 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:09,728 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:10,838 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:14,578 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:15,697 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:16,798 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:17,901 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:19,018 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:20,134 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:21,276 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:25,976 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:27,914 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:29,015 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:30,132 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:31,233 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:32,338 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:39,086 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:40,224 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:41,326 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:42,428 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:47,889 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:49,026 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:50,127 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:51,229 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:52,352 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:53,466 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:57,251 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:58,366 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:44:59,468 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:01,105 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:02,221 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:03,323 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:04,424 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:09,793 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:10,916 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:12,017 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:13,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:14,236 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:15,367 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:19,337 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:20,457 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:21,560 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:22,664 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:23,782 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:24,892 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:26,037 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:29,687 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:30,805 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:31,969 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:33,105 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:34,223 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:35,325 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:36,429 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:41,359 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:42,478 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:43,580 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:44,681 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:45,802 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:46,953 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:51,860 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:52,982 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:54,086 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:55,188 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:56,307 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:45:57,427 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:02,494 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:03,617 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:04,718 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:05,820 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:06,982 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:08,090 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:12,066 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:13,185 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:14,289 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:15,391 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:16,509 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:17,622 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:18,770 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:22,562 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:23,681 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:24,795 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:25,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:27,066 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:28,167 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:29,269 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:34,525 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:35,649 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:36,751 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:37,852 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:38,970 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:40,087 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:44,042 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:45,160 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:46,264 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:47,367 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:48,484 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:49,594 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:50,737 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:55,303 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:56,483 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:57,625 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:58,728 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:46:59,845 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:00,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:06,746 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:07,872 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:08,973 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:10,094 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:11,230 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:16,779 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:17,936 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:19,081 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:20,183 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:21,302 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:26,013 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:27,165 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:28,267 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:29,369 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:30,484 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:31,594 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:35,380 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:36,499 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:37,600 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:39,248 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:40,367 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:41,469 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:42,570 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:48,035 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:49,162 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:50,282 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:51,384 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:52,502 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:53,618 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:57,390 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:58,508 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:47:59,610 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:00,713 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:01,829 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:02,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:04,069 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:07,957 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:10,009 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:11,150 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:12,268 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:13,370 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:14,473 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:19,609 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:20,730 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:21,831 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:22,934 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:24,051 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:25,156 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:28,740 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:29,897 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:30,999 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:32,845 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:33,997 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:35,098 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:36,199 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:42,884 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:44,006 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:45,107 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:46,209 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:48:52,740 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:02,337 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Copilot.exe (PID: 20612)
+2025-10-04 11:49:05,815 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:06,959 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:08,062 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:13,862 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:15,025 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:16,127 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:17,229 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:18,352 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:49:18,355 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:23,509 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: msedge.exe (PID: 8044)
+2025-10-04 11:49:23,540 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: msedge.exe (PID: 14344)
+2025-10-04 11:49:23,568 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: msedge.exe (PID: 14484)
+2025-10-04 11:49:23,600 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: msedge.exe (PID: 16140)
+2025-10-04 11:49:23,615 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: msedge.exe (PID: 22388)
+2025-10-04 11:49:24,845 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:25,979 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:27,080 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:28,182 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:29,302 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:34,704 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:35,829 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:36,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:38,032 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:39,154 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:40,262 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:44,392 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:45,510 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:46,614 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:47,721 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:48,842 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:49,960 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:51,250 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:56,171 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:57,355 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:49:59,277 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 97.9, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:49:59,277 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:00,438 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:01,540 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:07,440 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:08,594 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:09,696 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:10,797 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:11,930 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:18,759 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:19,882 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:20,983 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:22,086 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:31,772 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:32,896 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:37,917 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 94.2, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:50:37,961 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:52,395 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:53,521 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:54,636 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:50:59,809 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:00,941 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:02,070 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:03,206 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:04,347 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:05,483 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:10,807 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:11,931 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:13,033 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:14,135 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:15,256 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:16,372 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:21,875 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:23,001 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:24,102 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:25,204 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:26,325 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:27,450 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:33,782 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:34,912 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:36,015 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:37,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:38,165 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:87 - ML models loaded successfully
+2025-10-04 11:51:38,178 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:95 - Knowledge graph initialized
+2025-10-04 11:51:38,179 - JARVIS.KnowledgeSynthesizer - INFO - [MainThread] - initialize:97 - Knowledge synthesizer initialized
+2025-10-04 11:51:38,184 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:83 - Initializing innovation engine...
+2025-10-04 11:51:38,241 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:44,356 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:45,482 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:46,583 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:47,685 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:48,804 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:54,364 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:55,490 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:56,591 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:57,693 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:51:58,813 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:04,419 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:05,541 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:06,642 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:07,745 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:08,864 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:14,481 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:15,610 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:16,711 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:17,841 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:18,959 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:25,189 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:26,317 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:27,419 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:28,521 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:29,640 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:36,418 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:37,546 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:38,648 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:39,751 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:46,202 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:47,325 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:48,431 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:49,535 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:50,659 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:54,860 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: WhatsApp.exe (PID: 17740)
+2025-10-04 11:52:57,124 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:58,250 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:52:59,352 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:00,453 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:01,586 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:07,592 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:08,713 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:09,815 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:10,918 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:12,038 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:18,351 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:19,480 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:20,582 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:21,683 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:22,802 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:26,608 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: RuntimeBroker.exe (PID: 18836)
+2025-10-04 11:53:28,652 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:29,775 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:30,876 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:31,978 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:33,103 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:39,724 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:40,849 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:41,951 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:43,053 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:44,175 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:49,735 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:50,857 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:51,958 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:53,060 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:54,176 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:53:59,887 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:01,013 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:02,114 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:03,216 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:04,341 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:10,154 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:11,277 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:12,379 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:13,482 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:14,608 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:20,216 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:21,339 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:22,440 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:23,667 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 81.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:54:23,667 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:24,946 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 90.9, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:54:24,947 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:30,818 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 82.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:54:30,818 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:31,940 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:33,042 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:34,145 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:35,262 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:40,973 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:42,104 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:43,206 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:44,308 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:45,426 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:51,311 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:52,442 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:53,543 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:54,647 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:54:55,771 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:01,757 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:02,877 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:03,978 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:05,081 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:06,203 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:12,648 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:13,772 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:14,875 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:15,977 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:17,095 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:22,982 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:24,102 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:25,204 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:26,305 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:27,425 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:31,770 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 9748)
+2025-10-04 11:55:31,820 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 9788)
+2025-10-04 11:55:31,821 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 10068)
+2025-10-04 11:55:31,883 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 10532)
+2025-10-04 11:55:31,905 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 13288)
+2025-10-04 11:55:31,906 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: pwsh.exe (PID: 14596)
+2025-10-04 11:55:31,906 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: conhost.exe (PID: 15596)
+2025-10-04 11:55:31,906 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 16436)
+2025-10-04 11:55:31,906 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: cmd.exe (PID: 17148)
+2025-10-04 11:55:31,965 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 18044)
+2025-10-04 11:55:32,032 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: conhost.exe (PID: 18528)
+2025-10-04 11:55:32,052 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 20032)
+2025-10-04 11:55:32,196 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 21464)
+2025-10-04 11:55:32,275 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 21556)
+2025-10-04 11:55:32,312 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 21668)
+2025-10-04 11:55:32,382 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: Cursor.exe (PID: 22220)
+2025-10-04 11:55:33,805 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:37,124 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:38,239 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:41,303 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:550 - Application crashed: wlanext.exe (PID: 9516)
+2025-10-04 11:55:44,905 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:46,029 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:47,154 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:48,272 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:53,340 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:56,660 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:55:57,779 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:04,443 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:05,548 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:06,650 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:07,768 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:08,883 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:13,274 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:14,393 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:15,495 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:16,598 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:17,716 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:18,866 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:20,496 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:24,658 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:26,762 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:27,904 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:29,023 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:30,127 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:31,233 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:37,249 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:38,372 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:39,474 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:40,577 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:41,695 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:46,997 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:48,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:49,220 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:50,323 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:51,439 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:52,563 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:56,906 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:58,026 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:56:59,131 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:00,234 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:01,350 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:02,465 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:03,634 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:07,987 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:09,143 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:11,118 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:12,237 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:13,369 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:14,471 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:20,108 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:21,230 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:22,332 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:23,434 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:24,554 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:29,880 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:31,007 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:32,109 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:33,212 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:34,332 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:35,481 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:39,535 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:40,671 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:41,776 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:42,879 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:43,999 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:45,126 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:46,334 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:50,314 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:51,434 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:53,335 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:54,483 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:55,586 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:57:56,688 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:02,253 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:03,377 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:04,479 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:05,581 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:06,703 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:11,847 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:12,970 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:14,073 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:15,176 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:16,296 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:17,439 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:21,889 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:23,034 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:24,139 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:25,242 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:26,362 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:27,487 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:31,406 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:32,530 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:33,631 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:34,734 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:35,864 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:37,006 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:38,480 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:42,613 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:44,648 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:45,838 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:46,988 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:48,091 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:58:49,249 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:05,053 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:06,155 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:07,257 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:08,375 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:09,513 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:13,188 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:14,305 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:15,407 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:16,514 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:17,630 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:18,753 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:19,945 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:23,807 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:24,928 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:26,085 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:27,230 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:28,383 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:29,487 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:30,594 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:36,724 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 85.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:37,843 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:38,944 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.5, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:40,046 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:41,292 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:47,876 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:59:47,876 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:49,009 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:50,124 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 89.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:51,260 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 92.1, 'threshold': 80, 'unit': 'percent'}
+2025-10-04 11:59:51,260 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 11:59:52,378 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.9, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:00,829 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:01,961 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:03,062 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:08,617 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:09,790 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:11,143 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:12,246 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:13,364 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:20,711 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 92.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:21,831 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:22,906 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:98 - Innovation models loaded successfully
+2025-10-04 12:00:22,907 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:120 - Initializing SentenceTransformer for solutions...
+2025-10-04 12:00:22,933 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 91.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:24,035 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:29,731 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:30,732 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:122 - Solutions embedding model initialized
+2025-10-04 12:00:30,870 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:31,375 - JARVIS.InnovationEngine - INFO - [MainThread] - _initialize_solutions_database:137 - Solutions database initialized
+2025-10-04 12:00:31,896 - JARVIS.InnovationEngine - INFO - [MainThread] - _seed_solutions_database:274 - Seeded solutions database with 8 proven solutions
+2025-10-04 12:00:31,896 - JARVIS.InnovationEngine - INFO - [MainThread] - initialize:109 - Innovation engine initialized
+2025-10-04 12:00:31,897 - JARVIS.CodeOptimizer - INFO - [MainThread] - initialize:62 - Initializing code optimizer...
+2025-10-04 12:00:31,898 - JARVIS.CodeOptimizer - INFO - [MainThread] - initialize:67 - Code optimizer initialized
+2025-10-04 12:00:31,899 - JARVIS.SecurityValidator - INFO - [MainThread] - initialize:56 - Initializing security validator...
+2025-10-04 12:00:31,899 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: type
+2025-10-04 12:00:31,899 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: severity
+2025-10-04 12:00:31,899 - JARVIS.SecurityValidator - WARNING - [MainThread] - _validate_security_rules:558 - Security rule dangerous_imports missing field: description
+2025-10-04 12:00:31,899 - JARVIS.SecurityValidator - INFO - [MainThread] - initialize:61 - Security validator initialized
+2025-10-04 12:00:31,900 - JARVIS.PerformanceAnalyzer - INFO - [MainThread] - initialize:62 - Initializing performance analyzer...
+2025-10-04 12:00:31,902 - JARVIS.PerformanceAnalyzer - INFO - [MainThread] - initialize:68 - Performance analyzer initialized
+2025-10-04 12:00:31,903 - JARVIS.IntegrationTester - INFO - [MainThread] - initialize:56 - Initializing integration tester...
+2025-10-04 12:00:31,903 - JARVIS.IntegrationTester - INFO - [MainThread] - _load_system_components:1108 - Loading JARVIS system components for integration testing...
+2025-10-04 12:00:31,907 - JARVIS.IntegrationTester - INFO - [MainThread] - _load_system_components:1145 - Loaded 8 system components for testing
+2025-10-04 12:00:31,907 - JARVIS.IntegrationTester - INFO - [MainThread] - _setup_test_environment:1154 - Setting up integration test environment...
+2025-10-04 12:00:31,915 - JARVIS.IntegrationTester - INFO - [MainThread] - _setup_test_environment:1204 - Integration test environment setup complete
+2025-10-04 12:00:31,915 - JARVIS.IntegrationTester - INFO - [MainThread] - initialize:64 - Integration tester initialized
+2025-10-04 12:00:31,916 - JARVIS.DeploymentOrchestrator - INFO - [MainThread] - initialize:66 - Initializing deployment orchestrator...
+2025-10-04 12:00:31,918 - JARVIS.DeploymentOrchestrator - INFO - [MainThread] - initialize:74 - Deployment orchestrator initialized
+2025-10-04 12:00:31,920 - JARVIS.SelfDevelopment - INFO - [MainThread] - initialize:202 - Self-development engine initialized
+2025-10-04 12:00:31,929 - JARVIS.ApplicationHealer - INFO - [MainThread] - initialize:96 - Initializing application healer...
+2025-10-04 12:00:31,929 - JARVIS.ErrorDetector - INFO - [MainThread] - initialize:21 - Error Detector initialized
+2025-10-04 12:00:31,929 - JARVIS.Debugger - INFO - [MainThread] - initialize:489 - Initializing advanced debugger system...
+2025-10-04 12:00:31,930 - JARVIS.Debugger - INFO - [MainThread] - debug_error:511 - Starting comprehensive error analysis: debug_1759559431_4468
+2025-10-04 12:00:31,931 - JARVIS.Debugger - INFO - [MainThread] - debug_error:618 - Error analysis completed in 0.00s with 0.0% confidence
+2025-10-04 12:00:31,931 - JARVIS.FixGenerator - INFO - [MainThread] - initialize:372 - Initializing advanced fix generator...
+2025-10-04 12:00:31,932 - JARVIS.FixGenerator - INFO - [MainThread] - generate_fix:392 - Generating fix for error: test_error
+2025-10-04 12:00:31,934 - JARVIS.FixGenerator - INFO - [MainThread] - generate_fix:439 - Fix generated in 0.00s with 0.7% confidence
+2025-10-04 12:00:31,934 - JARVIS.PatchApplier - INFO - [MainThread] - initialize:419 - Initializing advanced patch applier...
+2025-10-04 12:00:31,934 - JARVIS.RecoveryManager - INFO - [MainThread] - initialize:671 - Initializing advanced recovery manager...
+2025-10-04 12:00:31,946 - JARVIS.Optimizer - INFO - [MainThread] - initialize:509 - Initializing advanced system optimizer...
+2025-10-04 12:00:31,949 - JARVIS.HealthReporter - INFO - [MainThread] - initialize:371 - Initializing advanced health reporter...
+2025-10-04 12:00:31,949 - JARVIS.HealthReporter - ERROR - [MainThread] - initialize:385 - Error initializing health reporter: name 'asyncio' is not defined
+2025-10-04 12:00:31,950 - JARVIS.ApplicationHealer - ERROR - [MainThread] - initialize:130 - Error initializing application healer: name 'asyncio' is not defined
+2025-10-04 12:00:31,950 - JARVIS - ERROR - [MainThread] - _initialize_advanced_components:234 - Error initializing advanced components: name 'asyncio' is not defined
+2025-10-04 12:00:31,950 - JARVIS - INFO - [MainThread] - initialize_modules:200 - All modules initialized successfully
+2025-10-04 12:00:31,954 - JARVIS.Updater - INFO - [MainThread] - check_for_updates:93 - Checking for updates...
+2025-10-04 12:00:31,972 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 86.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-04 12:00:32,056 - JARVIS.Updater - ERROR - [MainThread] - _fetch_version_info:336 - HTTP error fetching version info: HTTPSConnectionPool(host='api.jarvis.ai', port=443): Max retries exceeded with url: /updates/version.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021125E14690>: Failed to resolve 'api.jarvis.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-10-04 12:00:32,057 - JARVIS.SelfDevelopment - INFO - [MainThread] - _process_tasks:254 - Self-development task processing started
+2025-10-04 12:00:33,085 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:453 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 87.4, 'threshold': 85, 'unit': 'percent'}

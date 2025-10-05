@@ -1,0 +1,127 @@
+2025-10-03 18:59:12,341 - JARVIS - ERROR - [MainThread] - _get_system_info:88 - Error getting system info: name 'GPUUTIL_AVAILABLE' is not defined
+2025-10-03 18:59:12,343 - JARVIS - INFO - [MainThread] - __init__:82 - J.A.R.V.I.S. system initialized
+2025-10-03 18:59:12,344 - JARVIS - INFO - [MainThread] - start:240 - Starting J.A.R.V.I.S. system...
+2025-10-03 18:59:12,344 - JARVIS - INFO - [MainThread] - initialize_modules:166 - Initializing system modules...
+2025-10-03 18:59:12,344 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:93 - Initializing voice interface...
+2025-10-03 18:59:14,234 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_tts:134 - TTS engine initialized
+2025-10-03 18:59:14,944 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:155 - Adjusting for ambient noise...
+2025-10-03 18:59:14,945 - JARVIS.VoiceInterface - ERROR - [MainThread] - _initialize_stt:162 - Error initializing STT: 'NoneType' object has no attribute 'close'
+2025-10-03 18:59:14,945 - JARVIS.VoiceInterface - INFO - [MainThread] - _initialize_stt:163 - STT will be unavailable
+2025-10-03 18:59:14,946 - JARVIS.VoiceInterface - INFO - [MainThread] - initialize:104 - Voice interface initialized successfully
+2025-10-03 18:59:14,947 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:108 - System monitoring loop started
+2025-10-03 18:59:14,947 - JARVIS.SystemMonitor - INFO - [MainThread] - start_monitoring:94 - System monitoring started
+2025-10-03 18:59:14,948 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:59 - Initializing application controller...
+2025-10-03 18:59:14,949 - JARVIS.ApplicationController - INFO - [MainThread] - start_monitoring:505 - Application monitoring started
+2025-10-03 18:59:22,049 - JARVIS.ApplicationController - ERROR - [AppMonitor] - _monitor_loop:530 - Error in application monitoring: dictionary changed size during iteration
+2025-10-03 18:59:22,305 - JARVIS.SystemMonitor - DEBUG - [SystemMonitor] - _get_temperature_info:372 - Error getting temperature info: module 'psutil' has no attribute 'sensors_temperatures'
+2025-10-03 18:59:22,316 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:23,525 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:24,709 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 90.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:24,710 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:25,344 - JARVIS.ApplicationController - INFO - [MainThread] - _scan_running_applications:130 - Scanned 283 running applications
+2025-10-03 18:59:25,345 - JARVIS.ApplicationController - INFO - [MainThread] - initialize:67 - Application controller initialized
+2025-10-03 18:59:25,347 - JARVIS.FileManager - INFO - [MainThread] - initialize:72 - Initializing file manager...
+2025-10-03 18:59:25,350 - JARVIS.FileManager - INFO - [MainThread] - initialize:77 - File manager initialized
+2025-10-03 18:59:25,351 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:63 - Initializing network manager...
+2025-10-03 18:59:25,516 - JARVIS.NetworkManager - INFO - [MainThread] - _scan_network_interfaces:113 - Found 7 network interfaces
+2025-10-03 18:59:25,821 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 85.6, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:25,821 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:25,921 - JARVIS.NetworkManager - INFO - [MainThread] - _set_default_interface:145 - Default interface set to: 192.168.2.8
+2025-10-03 18:59:25,952 - JARVIS.NetworkManager - INFO - [NetworkMonitor] - _monitor_loop:173 - Network monitoring loop started
+2025-10-03 18:59:25,952 - JARVIS.NetworkManager - INFO - [MainThread] - start_monitoring:160 - Network monitoring started
+2025-10-03 18:59:26,028 - JARVIS.NetworkManager - INFO - [MainThread] - initialize:74 - Network manager initialized
+2025-10-03 18:59:26,052 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:66 - Initializing security manager...
+2025-10-03 18:59:26,117 - JARVIS.SecurityManager - INFO - [MainThread] - _initialize_encryption:124 - Generated new master encryption key
+2025-10-03 18:59:26,118 - JARVIS.SecurityManager - INFO - [MainThread] - initialize:77 - Security manager initialized
+2025-10-03 18:59:26,119 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:101 - Loading plugins...
+2025-10-03 18:59:32,541 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 94.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:32,599 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:35,098 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 97.3, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:35,147 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 97.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:35,616 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:549 - Application crashed: dllhost.exe (PID: 2636)
+2025-10-03 18:59:35,616 - JARVIS.ApplicationController - WARNING - [AppMonitor] - _check_crashed_applications:549 - Application crashed: svchost.exe (PID: 10996)
+2025-10-03 18:59:36,311 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:42,411 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:44,225 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 96.6, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:44,250 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:45,377 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 97.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:45,378 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:46,815 - JARVIS.SystemMonitor - DEBUG - [SystemMonitor] - _get_temperature_info:372 - Error getting temperature info: module 'psutil' has no attribute 'sensors_temperatures'
+2025-10-03 18:59:46,815 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:46,816 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:54,955 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 94.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:54,977 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.7, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:56,750 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 86.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:56,750 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 18:59:57,893 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 95.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 18:59:57,894 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:05,749 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 100.0, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:05,749 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:06,918 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:08,067 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.4, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:08,068 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.4, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:16,528 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 88.3, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:16,528 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:17,681 - JARVIS.SystemMonitor - DEBUG - [SystemMonitor] - _get_temperature_info:372 - Error getting temperature info: module 'psutil' has no attribute 'sensors_temperatures'
+2025-10-03 19:00:17,682 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:18,885 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:26,503 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 96.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:27,686 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 85.3, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:27,686 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:28,789 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.1, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:29,895 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 89.2, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:29,895 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:40,956 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 96.5, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:40,961 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:46,091 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_cpu_usage - {'metric': 'cpu', 'value': 90.7, 'threshold': 80, 'unit': 'percent'}
+2025-10-03 19:00:46,097 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 98.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:47,950 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:49,231 - JARVIS.SystemMonitor - DEBUG - [SystemMonitor] - _get_temperature_info:372 - Error getting temperature info: module 'psutil' has no attribute 'sensors_temperatures'
+2025-10-03 19:00:49,232 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:50,351 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:51,473 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 95.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:56,780 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 94.3, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:57,899 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:00:59,007 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 88.0, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:00,119 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:01,274 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.6, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:02,393 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:07,432 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 90.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:08,561 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:09,663 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.2, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:10,782 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:11,671 - JARVIS.PluginManager - INFO - [MainThread] - load_plugins:110 - Loaded 6 plugins
+2025-10-03 19:01:11,671 - JARVIS - INFO - [MainThread] - initialize_modules:200 - All modules initialized successfully
+2025-10-03 19:01:11,672 - JARVIS - INFO - [MainThread] - _main_loop:259 - J.A.R.V.I.S. is now running
+2025-10-03 19:01:11,673 - JARVIS - ERROR - [MainThread] - _main_loop:282 - Error in main loop: 'cpu_percent'
+2025-10-03 19:01:11,673 - JARVIS - INFO - [MainThread] - shutdown:406 - Shutting down J.A.R.V.I.S. system...
+2025-10-03 19:01:11,928 - JARVIS.SystemMonitor - WARNING - [SystemMonitor] - _trigger_alert:449 - Alert triggered: high_memory_usage - {'metric': 'memory', 'value': 93.8, 'threshold': 85, 'unit': 'percent'}
+2025-10-03 19:01:12,028 - JARVIS.SystemMonitor - INFO - [SystemMonitor] - _monitor_loop:143 - System monitoring loop ended
+2025-10-03 19:01:12,171 - JARVIS.SystemMonitor - INFO - [MainThread] - stop_monitoring:101 - System monitoring stopped
+2025-10-03 19:01:12,171 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:711 - Shutting down voice interface...
+2025-10-03 19:01:12,171 - JARVIS.VoiceInterface - INFO - [MainThread] - stop_continuous_listening:416 - Continuous listening stopped
+2025-10-03 19:01:12,171 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:733 - Voice interface shutdown complete
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:638 - Unloading all plugins...
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: voice_interface
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: system_monitor
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: application_controller
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: file_manager
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: network_manager
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: security_manager
+2025-10-03 19:01:12,172 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:651 - All plugins unloaded
+2025-10-03 19:01:12,172 - JARVIS - INFO - [MainThread] - shutdown:441 - J.A.R.V.I.S. system shutdown complete
+2025-10-03 19:01:12,172 - JARVIS.SystemMonitor - ERROR - [MainThread] - get_system_info:635 - Error getting system info: module 'sys' has no attribute 'processor'
+2025-10-03 19:01:12,172 - JARVIS - INFO - [MainThread] - shutdown:406 - Shutting down J.A.R.V.I.S. system...
+2025-10-03 19:01:12,173 - JARVIS.SystemMonitor - INFO - [MainThread] - stop_monitoring:101 - System monitoring stopped
+2025-10-03 19:01:12,173 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:711 - Shutting down voice interface...
+2025-10-03 19:01:12,173 - JARVIS.VoiceInterface - INFO - [MainThread] - stop_continuous_listening:416 - Continuous listening stopped
+2025-10-03 19:01:12,173 - JARVIS.VoiceInterface - INFO - [MainThread] - shutdown:733 - Voice interface shutdown complete
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:638 - Unloading all plugins...
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: voice_interface
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: system_monitor
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: application_controller
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: file_manager
+2025-10-03 19:01:12,173 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: network_manager
+2025-10-03 19:01:12,174 - JARVIS.PluginManager - INFO - [MainThread] - disable_plugin:345 - Disabled plugin: security_manager
+2025-10-03 19:01:12,174 - JARVIS.PluginManager - INFO - [MainThread] - unload_plugins:651 - All plugins unloaded
+2025-10-03 19:01:12,174 - JARVIS - INFO - [MainThread] - shutdown:441 - J.A.R.V.I.S. system shutdown complete

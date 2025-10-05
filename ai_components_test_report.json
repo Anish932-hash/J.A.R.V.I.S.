@@ -1,0 +1,17 @@
+{
+  "test_timestamp": 1759540290.7100084,
+  "total_tests": 2,
+  "passed_tests": 0,
+  "failed_tests": 2,
+  "overall_success_rate": 0.0,
+  "detailed_results": {
+    "self_development_engine": {
+      "success": false,
+      "error": "'EventManager' object has no attribute 'EventType'"
+    },
+    "application_healer": {
+      "success": false,
+      "error": "name 'asyncio' is not defined"
+    }
+  }
+}
